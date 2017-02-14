@@ -1,0 +1,11 @@
+email: ovi@ovswebsites.com
+fullname: 'Ovi Savescu'
+title: Admin
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$SaEI1z0hR4T535lbU4ci.OqPTletCMhskup9VlbwpetxD9Xs2Dvta
