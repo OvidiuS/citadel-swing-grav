@@ -1,5 +1,10 @@
 ---
 title: Home
+content:
+    items: '@self.modular'
+    order:
+        by: date
+        dir: desc
 ---
 
 # Grav is Running!
