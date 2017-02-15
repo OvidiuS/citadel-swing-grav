@@ -104,9 +104,27 @@
 	<!-- /.w-nav navbar -->
 {% endblock %}
 
+{% block hero %}
+	<div class="w-section hero">
+		<div id="home" data-ix="scroll-nav" class="big-logo-bg">
+			<div class="w-container">
+			
+				{% block herocontent %}
+				{% endblock %}
+
+			</div>
+			<!-- /.w-container -->
+		</div>
+		<!-- /.big-logo-bg -->
+	</div>
+	<!-- /.hero -->
+{% endblock %}
+
+<main>
 {% block body %}
 
 {% endblock %}
+</main>
 
 {% block footer %}
 
