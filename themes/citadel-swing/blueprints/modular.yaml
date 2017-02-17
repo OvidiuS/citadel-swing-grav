@@ -4,28 +4,14 @@ title: Modular
 form:
   fields:
     tabs:
-      type: tabs
-      active: 1
-
       fields:
-        gallery:
-          type: tab
-          title: Gallery
-
+        content:
           fields:
-            header.an_example_text_field:
-              type: text
-              label: Add a number
-              default: 5
-              validate:
-                required: true
-                type: int
-
-            header.an_example_select_box:
+            header.main_heading_text_size:
+              ordering@: 0
               type: select
-              label: Select one of the following
-              default: one
+              label: Main Heading Text Size
+              default: small
               options:
-                one: One
-                two: Two
-                three: Three
+                small: Small Size
+                large: Large Size

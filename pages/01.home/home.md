@@ -5,8 +5,7 @@ content:
     order:
         by: folder
         dir: asc
-an_example_text_field: 5
-an_example_select_box: one
+main_heading_text_size: large
 ---
 
 # Grav is Running!
