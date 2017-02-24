@@ -1,6 +1,16 @@
 ---
 title: 'Diego & Jessica'
+leader_name: 'Diego Borges'
+leader_country: BRA
+follower_name: 'Jessica Pacheco Caetano'
+follower_country: FR
 visible: true
+teachers_image:
+    user/pages/02.Info/02.teachers/02._diego-and-jessica/diego_borges-and-jessica_pacheco_caetano.jpg:
+        name: diego_borges-and-jessica_pacheco_caetano.jpg
+        type: image/jpeg
+        size: 12537
+        path: user/pages/02.Info/02.teachers/02._diego-and-jessica/diego_borges-and-jessica_pacheco_caetano.jpg
 ---
 
 Diego and Jessica live in Fortaleza, Brazil. Diego has a degree in Physical Education and a Graduate Degree in Dance Teaching Methodology. Jessica has a degree in Accounting. Passion for dance has inspired the strong partnership between Diego and Jessica, and has been spreading West Coast Swing in Brazil and around the world since 2009, when they began to put all its charm to its first steps in the WCS.

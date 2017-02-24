@@ -1,5 +1,15 @@
 ---
 title: 'Jakub & Emeline'
+leader_name: 'Jakub Jakoubek'
+leader_country: CZE
+follower_name: 'Emeline Rochefeuille'
+follower_country: FR
+teachers_image:
+    user/pages/02.Info/02.teachers/03._jakub-and-emeline/jakub_jakoubek-and-emeline_rochefeuille.jpg:
+        name: jakub_jakoubek-and-emeline_rochefeuille.jpg
+        type: image/jpeg
+        size: 10020
+        path: user/pages/02.Info/02.teachers/03._jakub-and-emeline/jakub_jakoubek-and-emeline_rochefeuille.jpg
 ---
 
 Natively from Czech Republic & Reunion Island, Jakub and Em took their first steps into the dance world at the age of 16 and 12, both starting with Ballroom Dancing (Latin, Standard & line-dancing). 

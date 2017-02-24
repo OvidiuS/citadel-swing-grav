@@ -1,6 +1,22 @@
 ---
 title: 'Adam & Rita'
+leader_name: 'Adam Balasy'
+leader_country: HU
+follower_name: 'Rita Jori'
+follower_country: HU
 visible: true
+teachers_image:
+    user/pages/02.Info/02.teachers/01._adam-and-rita/adam_balasy-and-rita_jori.jpg:
+        name: adam_balasy-and-rita_jori.jpg
+        type: image/jpeg
+        size: 15204
+        path: user/pages/02.Info/02.teachers/01._adam-and-rita/adam_balasy-and-rita_jori.jpg
+teachersImage:
+    user/pages/02.Info/02.teachers/01._adam-and-rita/adam_balasy-and-rita_jori.jpg:
+        name: adam_balasy-and-rita_jori.jpg
+        type: image/jpeg
+        size: 15204
+        path: user/pages/02.Info/02.teachers/01._adam-and-rita/adam_balasy-and-rita_jori.jpg
 ---
 
 Adam and Rita first started teaching Boogie-Woogie together in 2002.

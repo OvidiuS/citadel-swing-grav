@@ -1,0 +1,76 @@
+title: teachers_bio
+extends@: default
+
+form:
+  fields:
+    tabs:
+      fields:
+        content:
+          fields:
+
+            header.title:
+              type: text
+              label: 'Teaching Couple Name'
+              validate:
+                required: true
+                message: 'Please enter teaching couple name'
+
+            columns:
+              type: columns
+              ordering@: 2
+              fields:
+
+                column1:
+                  type: column
+                  fields:
+
+                    header.leader_name:
+                      type: text
+                      label: 'Leader Name'
+                      validate:
+                        required: true
+                        message: 'Please add Follower Name'
+                    header.leader_country:
+                      type: text
+                      label: 'Leader Country'
+                      validate:
+                        required: true
+                        message: 'Please add Leader country'
+
+                column2:
+                  type: column
+                  fields:
+
+                    header.follower_name:
+                      type: text
+                      label: 'Follower Name'
+                      validate:
+                        required: true
+                        message: 'Please add Follower Name'
+
+                    header.follower_country:
+                      type: text
+                      label: 'Follower Country'
+                      validate:
+                        required: true
+                        message: 'Please add Follower country'
+
+            content:
+              label: Bio
+              ordering@: 50
+              validate:
+                required: true
+                message: 'Please add a Biography'
+
+            header.teachers_image:
+              type: file
+              ordering@: 1
+              label: Image of the teachers
+              destination: self@
+              multiple: false
+              accept:
+                - image/*
+
+            uploads:
+              type: hidden
+              label: PLUGIN_ADMIN.PAGE_MEDIA
