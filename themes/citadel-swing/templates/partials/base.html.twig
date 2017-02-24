@@ -19,8 +19,8 @@
         {% do assets.addCss('theme://css/webflow.css', 98) %}
         {% do assets.addCss('theme://css/citadel-swing.webflow.css', 97) %}
         {% do assets.addCss('theme://css/custom.css', 96) %}
-        
-        
+
+
     {% endblock %}
     {{ assets.css() }}
 
@@ -38,7 +38,7 @@
 			}
 		});
 	</script>
-	
+
 {% endblock head%}
 </head>
 <body id="top" class="{{ page.header.body_classes }}">
@@ -108,7 +108,7 @@
 	<div class="w-section hero">
 		<div id="home" data-ix="scroll-nav" class="big-logo-bg">
 			<div class="w-container">
-				<h1 class="hero-heading{% if header.main_heading_text_size == 'small' %} smallHeroheading{% endif %}">Citadel Swing</h1>
+				<h1 class="hero-heading{% if header.main_heading_text_size == 'small' %} smallHeroheading{% endif %}">{{ header.title }}</h1>
 				{% block herocontent %}
 				{% endblock %}
 
