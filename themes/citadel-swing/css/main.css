@@ -28,7 +28,7 @@ p.bigSolo {
   font-size: 1.8em; }
 
 li {
-  margin-bottom: 0.5em; }
+  margin-bottom: .5em; }
 
 .hero {
   background-color: #d90246;
@@ -300,9 +300,9 @@ li {
   right: 0;
   top: 0; }
 
-html.w-mod-js *[data-ix="hide-scroll-nav"] {
-  -ms-transform: translate(0, -88px);
+html .w-mod-js * [data-ix='hide-scroll-nav'] {
   -webkit-transform: translate(0, -88px);
+  -ms-transform: translate(0, -88px);
   transform: translate(0, -88px); }
 
 .buyTicketsWrapper {
@@ -333,6 +333,9 @@ html.w-mod-js *[data-ix="hide-scroll-nav"] {
   .buyTicketsLink:hover {
     background-color: #fff;
     margin-top: 0; }
+    .buyTicketsLink:hover .ticketButtonText {
+      background-color: #fff7e2;
+      padding: 70px 49px 50px 68px; }
 
 .ticketButtonText {
   background-color: #fff;
@@ -340,10 +343,6 @@ html.w-mod-js *[data-ix="hide-scroll-nav"] {
   display: block;
   padding: 60px 39px 40px 58px;
   transition: all 200ms ease-in-out 0s; }
-
-.buyTicketsLink:hover .ticketButtonText {
-  background-color: #fff7e2;
-  padding: 70px 49px 50px 68px; }
 
 .mainTicketText {
   display: block;
@@ -674,7 +673,7 @@ html.w-mod-js *[data-ix="hide-scroll-nav"] {
     padding-bottom: 50px;
     padding-top: 50px; }
   .section.join-us {
-    background-image: linear-gradient(90deg, #fff 24%, rgba(255, 255, 255, 0.62)), url("../images/bastion-timisoara.jpg");
+    background-image: linear-gradient(90deg, #fff 24%, rgba(255, 255, 255, 0.5)), url("../images/bastion-timisoara.jpg");
     background-position: 0 0, 100% 50%;
     background-repeat: repeat, no-repeat; }
   .button {
@@ -762,8 +761,8 @@ html.w-mod-js *[data-ix="hide-scroll-nav"] {
     display: none; }
   .scheduleMoreInfo {
     -webkit-column-span: 3;
-       -moz-column-span: 3;
-            column-span: 3; } }
+    -moz-column-span: 3;
+    column-span: 3; } }
 
 .halfBg {
   height: 100%;
@@ -795,10 +794,10 @@ html.w-mod-js *[data-ix="hide-scroll-nav"] {
       min-width: 100%;
       position: absolute;
       top: 50%;
-      width: auto;
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -50%); }
+      transform: translate(-50%, -50%);
+      width: auto; }
 
 .leftHalfBg {
   left: 0; }
@@ -855,16 +854,16 @@ html.w-mod-js *[data-ix="hide-scroll-nav"] {
     color: #d90246; }
     .halfBgContainer a:hover {
       background-color: #d90246;
-      padding: 5px 0;
-      color: #fff; }
+      color: #fff;
+      padding: 5px 0; }
 
 .ticketWrapper {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .ticket {
   background-color: #fff7e2;
@@ -894,3 +893,5 @@ html.w-mod-js *[data-ix="hide-scroll-nav"] {
     margin-bottom: 1em; }
   .ticket h3 {
     font-size: 1.5em; }
+
+/*# sourceMappingURL=main.css.map */
