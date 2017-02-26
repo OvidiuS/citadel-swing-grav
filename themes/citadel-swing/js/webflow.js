@@ -4589,6 +4589,7 @@ Webflow.require('ix').init([
 
 $( document ).ready(function() {
     //console.log( "ready!" );
+$(".mobilenav").css('display', 'block');
 
 	$(".shceduleMoreLink").click(function(){
 		$(".cellDetailsVisible").removeClass("cellDetailsVisible");

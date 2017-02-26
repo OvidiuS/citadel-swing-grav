@@ -44,27 +44,37 @@
 </head>
 <body id="top" class="{{ page.header.body_classes }}">
 {% block header %}
-	<div data-collapse="medium" data-animation="default" data-duration="400" data-contain="1" data-doc-height="1" data-ix="hide-scroll-nav" class="w-nav mobilenav">
+	<div data-collapse="medium" data-animation="default" data-duration="400" data-contain="1" data-doc-height="1" data-ix="hide-scroll-nav" class="w-nav mobilenav" style="display:none">
 		<div class="w-container">
 			<a href="/" class="w-nav-brand brand floating"><img width="175" src="{{ theme_url }}/images/logo-small-white2.png" class="floating-nav-logo" alt="Citadel Swing logo"></a>
 			<nav class="w-nav-menu nav-menu">
-				<a href="#home" class="w-nav-link main-menu-item float">Home</a>
-				<div class="w-dropdown" data-delay="0">
-					<div class="main-menu-item w-dropdown-toggle float">
-						<div>Info</div>
-						<div class="w-icon-dropdown-toggle"></div>
-					</div>
-					<nav class="menu-dropdown-list w-dropdown-list" >
-						<a class="main-menu-item subitem w-dropdown-link" href="/schedule">Schedule</a>
-						<a class="main-menu-item subitem w-dropdown-link" href="/faqs">FAQs</a>
-						<a class="main-menu-item subitem w-dropdown-link" href="/the-plan">The Plan</a>
-						<a class="main-menu-item subitem w-dropdown-link" href="/prices">Prices</a>
-					</nav>
-				</div>
-				<a href="/about-the-city-timisoara" class="w-nav-link main-menu-item float">The City</a>
-				<a href="/marketplace" class="w-nav-link main-menu-item float">Marketplace</a>
-				<a href="/order" class="w-nav-link main-menu-item float">Buy Tickets</a>
-				<a href="/#join-us" class="w-nav-link main-menu-item float">Join Us</a>
+        {% for page in pages.children -%}
+          {%- if page.visible -%}
+            {%- set current_page = (page.active or page.activeChild) ? ' w--current' : '' -%}
+            {%- if page.children.count == 0 or page.url == '/'  %}
+              <a class="main-menu-item w-nav-link float{{ current_page }}" href="{{ page.url }}">{{ page.menu }}</a>
+            {% else %}
+            <div class="w-dropdown" data-delay="0">
+                <div class="main-menu-item w-dropdown-toggle float{{ current_page }}">
+        		      <div>{{ page.menu }}</div>
+        		    <div class="w-icon-dropdown-toggle"></div>
+                </div>
+              <nav class="menu-dropdown-list w-dropdown-list">
+                {%- for child in page.children -%}
+                  {%- if child.visible %}
+
+                    <a class="main-menu-item subitem w-dropdown-link{{ current_page }}" href="{{ child.url }}">{{ child.menu }}</a>
+
+                  {%- endif -%}
+                {%- endfor %}
+
+              </nav>
+            </div>
+            <!-- /.w-dropdown -->
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+
 			</nav>
 			<div class="w-nav-button main-menu-mobile-button">
 				<div class="w-icon-nav-menu main-menu-icon"></div>
@@ -77,25 +87,33 @@
 		<div class="w-container">
 			<a class="brand w-nav-brand" href="/"><img src="{{ theme_url }}/images/logo-small-white2.png" width="254" alt="Citadel Swing logo"></a>
 			<nav class="nav-menu w-nav-menu">
-				<a class="main-menu-item w-nav-link" href="#home">Home</a>
-				<div class="w-dropdown" data-delay="0">
-					<div class="main-menu-item w-dropdown-toggle">
-						<div>Info</div>
-						<div class="w-icon-dropdown-toggle"></div>
-					</div>
-				    <nav class="menu-dropdown-list w-dropdown-list">
-				    	<a class="main-menu-item subitem w-dropdown-link" href="/schedule">Schedule</a>
-				    	<a class="main-menu-item subitem w-dropdown-link" href="/faqs">FAQs</a>
-				    	<a class="main-menu-item subitem w-dropdown-link" href="/the-plan">The Plan</a>
-				    	<a class="main-menu-item subitem w-dropdown-link" href="/prices">Prices</a>
-					</nav>
-				</div>
-				<!-- <a class="main-menu-item w-nav-link" href="/#the-plan">The Plan</a> -->
-				<a class="main-menu-item w-nav-link" href="/about-the-city-timisoara">The City</a>
-				<a  class="w-nav-link main-menu-item" href="/marketplace">Market</a>
-				<a class="main-menu-item w-nav-link" href="/order">Buy Tickets</a>
-				<a class="main-menu-item w-nav-link" href="/#join-us">Join Us</a>
-			</nav>
+        {% for page in pages.children -%}
+          {%- if page.visible -%}
+            {%- set current_page = (page.active or page.activeChild) ? ' w--current' : '' -%}
+            {%- if page.children.count == 0 or page.url == '/'  %}
+              <a class="main-menu-item w-nav-link{{ current_page }}" href="{{ page.url }}">{{ page.menu }}</a>
+            {% else %}
+            <div class="w-dropdown" data-delay="0">
+                <div class="main-menu-item w-dropdown-toggle{{ current_page }}">
+        		      <div>{{ page.menu }}</div>
+        		    <div class="w-icon-dropdown-toggle"></div>
+                </div>
+              <nav class="menu-dropdown-list w-dropdown-list">
+                {%- for child in page.children -%}
+                  {%- if child.visible %}
+
+                    <a class="main-menu-item subitem w-dropdown-link{{ current_page }}" href="{{ child.url }}">{{ child.menu }}</a>
+
+                  {%- endif -%}
+                {%- endfor %}
+
+              </nav>
+            </div>
+            <!-- /.w-dropdown -->
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+			  </nav>
 			<div class="main-menu-mobile-button w-nav-button">
 				  <div class="main-menu-icon w-icon-nav-menu"></div>
 			</div>
