@@ -1,5 +1,5 @@
-@import 'libs/_breakpoint';
-@import 'libs/_breakpoint-slicer';
+@import 'libs/breakpoint';
+@import 'libs/breakpoint-slicer';
 @import 'susy';
 
 
@@ -37,8 +37,9 @@ $color-black: #000;
 // grays
 $color-dove-gray: #6f6f6f; //medium grey
 $color-mercury: #e6e6e6; // light grey
-$color-really-transparent-black: rgba(0, 0, 0, .4);
-
+$color-transparent-black: rgba(0, 0, 0, .4);
+$color-really-transparent-black: hsla(0, 0%, 100%, 0);
+$medium-shadow: rgba(0, 0, 0, .54);
 
 
 // semantic color assignments
@@ -47,6 +48,7 @@ $text-color: $color-mine-shaft;
 $background-color: $color-white;
 $background-color-alternate: $color-mercury;
 $header-fancy-shadow: 0 3px 0 #bdb8b8, -5px 9px 0 hsla(0, 0%, 100%, .35);
+$half-transparent-white: hsla(0, 0%, 100%, .5);
 
 $header-light-text: $color-sundown;
 $adam-rita-color: $color-green;
@@ -95,7 +97,7 @@ p {
 }
 
 li {
-  margin-bottom: 0.5em;
+  margin-bottom: .5em;
 }
 
 .hero {
@@ -219,7 +221,7 @@ li {
 .menu-dropdown-list {
   &.w--open {
     background-color: $background-color;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .54);
+    box-shadow: 0 3px 6px 0 $medium-shadow;
   }
 }
 
@@ -244,6 +246,9 @@ li {
 }
 
 .selectedForBio {
+
+  background-color: $color-white;
+
   &:hover {
     background-color: $background-color;
   }
@@ -251,8 +256,6 @@ li {
   .with {
     color: $background-color;
   }
-
-  background-color: $color-white;
 
   .invitee-title {
     color: $primary-color;
@@ -287,7 +290,7 @@ li {
   }
 
   &.join-us {
-    background: linear-gradient(to right, $background-color 44%, hsla(0, 0%, 100%, 0) 100%), url('../images/bastion-timisoara.jpg');;
+    background: linear-gradient(to right, $background-color 44%, $color-really-transparent-black 100%), url('../images/bastion-timisoara.jpg');;
     background-position: 0 0, 100% 50%;
     background-repeat: repeat, no-repeat;
   }
@@ -402,7 +405,7 @@ li {
   color: $primary-color;
   display: block;
   font-size: 30px;
-  text-shadow: 0 2px 0 rgba(182, 35, 35, 0.25);
+  text-shadow: 0 2px 0 rgba(182, 35, 35, .25);
 }
 
 .white-hack {
@@ -446,7 +449,7 @@ li {
 
 .mobilenav {
   background-color: $primary-color;
-  box-shadow: 0 0 11px 0 $color-really-transparent-black;
+  box-shadow: 0 0 11px 0 $color-transparent-black;
   display: block;
   left: 0;
   padding-bottom: 4px;
@@ -456,8 +459,14 @@ li {
   top: 0;
 }
 
-html.w-mod-js *[data-ix="hide-scroll-nav"] {
-  transform: translate(0, -88px);
+html {
+  .w-mod-js {
+    * {
+      [data-ix='hide-scroll-nav'] {
+        transform: translate(0, -88px);
+      }
+    }
+  }
 }
 
 .buyTicketsWrapper {
@@ -490,6 +499,11 @@ html.w-mod-js *[data-ix="hide-scroll-nav"] {
   &:hover {
     background-color: $background-color;
     margin-top: 0;
+
+    .ticketButtonText {
+      background-color: $color-varden;
+      padding: 70px 49px 50px 68px;
+    }
   }
 }
 
@@ -499,11 +513,6 @@ html.w-mod-js *[data-ix="hide-scroll-nav"] {
   display: block;
   padding: 60px 39px 40px 58px;
   transition: all 200ms ease-in-out 0s;
-}
-
-.buyTicketsLink:hover .ticketButtonText {
-  background-color: $color-varden;
-  padding: 70px 49px 50px 68px;
 }
 
 .mainTicketText {
@@ -766,7 +775,7 @@ html.w-mod-js *[data-ix="hide-scroll-nav"] {
   text-align: center;
 
   p {
-    margin-bottom:0;
+    margin-bottom: 0;
   }
 
   a {
@@ -1019,7 +1028,7 @@ html.w-mod-js *[data-ix="hide-scroll-nav"] {
     }
 
     &.join-us {
-      background-image: linear-gradient(90deg, $background-color 24%, hsla(0, 0%, 100%, .62)), url('../images/bastion-timisoara.jpg');
+      background-image: linear-gradient(90deg, $background-color 24%, $half-transparent-white), url('../images/bastion-timisoara.jpg');
       background-position: 0 0, 100% 50%;
       background-repeat: repeat, no-repeat;
     }
