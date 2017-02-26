@@ -506,7 +506,6 @@ html {
   text-decoration: none;
   text-overflow: ellipsis;
   transition: all 200ms ease-in-out 0s;
-  white-space: nowrap;
 
   &:hover {
     background-color: $background-color;

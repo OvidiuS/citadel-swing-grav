@@ -337,8 +337,7 @@ html .w-mod-js * [data-ix='hide-scroll-nav'] {
   text-align: center;
   text-decoration: none;
   text-overflow: ellipsis;
-  transition: all 200ms ease-in-out 0s;
-  white-space: nowrap; }
+  transition: all 200ms ease-in-out 0s; }
   .buyTicketsLink:hover {
     background-color: #fff;
     margin-top: 0; }
