@@ -130,11 +130,11 @@ li {
 .sumary-desc {
   font-family: Montserrat, sans-serif; }
 
-.invitee-wrapper {
+.pro-hero-wrapper {
   cursor: pointer;
   overflow: hidden;
   padding: 0 0 35px 7%; }
-  .invitee-wrapper:hover {
+  .pro-hero-wrapper:hover {
     background-color: rgba(179, 179, 179, 0.24); }
 
 .selectedForBio {
@@ -630,7 +630,7 @@ html .w-mod-js * [data-ix='hide-scroll-nav'] {
     padding-right: 2%; }
   .w--nav-menu-open {
     right: 2%; }
-  .invitee-wrapper {
+  .pro-hero-wrapper {
     padding-left: 8%; }
   .section {
     padding-bottom: 56px;
@@ -667,7 +667,7 @@ html .w-mod-js * [data-ix='hide-scroll-nav'] {
   .summary-column {
     padding-left: 7%;
     padding-right: 7%; }
-  .invitee-wrapper {
+  .pro-hero-wrapper {
     padding-left: 1%; }
   .section.red {
     padding-bottom: 50px;
