@@ -6,6 +6,7 @@ content:
         by: folder
         dir: asc
 main_heading_text_size: large
+menu: Home
 pros:
     items:
         '@page.modular': /info/teachers
