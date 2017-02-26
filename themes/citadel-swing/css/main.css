@@ -136,6 +136,8 @@ li {
   padding: 0 0 35px 7%; }
   .pro-hero-wrapper:hover {
     background-color: rgba(179, 179, 179, 0.24); }
+  .pro-hero-wrapper .invitee-image {
+    width: 40%; }
 
 .selectedForBio {
   background-color: #fff; }
@@ -149,8 +151,9 @@ li {
 .invitee-image {
   border-radius: 50%;
   box-shadow: -4px 4px 1px 0 #fff;
-  float: left;
-  width: 40%; }
+  float: left; }
+  .invitee-image.rte {
+    margin-right: 20px; }
 
 .section {
   border-bottom-color: #d90246;

@@ -2,7 +2,7 @@
 
   {% block sectionContent %}
     <h2>{{ header.title }}</h2>
-      <img src="/{{ (header.teachers_image | first).path }}" alt="{{ header.title}}">
+      <img src="/{{ (header.teachers_image | first).path }}" alt="{{ header.title}}" class="invitee-image rte">
     {{ content }}
   {% endblock %}
 {% endembed %}

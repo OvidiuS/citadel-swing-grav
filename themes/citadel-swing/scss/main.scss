@@ -244,6 +244,10 @@ li {
   &:hover {
     background-color: $header-hover-color;
   }
+
+  .invitee-image {
+    width: 40%;
+  }
 }
 
 .selectedForBio {
@@ -267,7 +271,10 @@ li {
   border-radius: 50%;
   box-shadow: -4px 4px 1px 0 $background-color;
   float: left;
-  width: 40%;
+
+  &.rte {
+    margin-right: 20px;
+  }
 }
 
 .section {
