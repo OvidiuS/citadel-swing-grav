@@ -460,6 +460,8 @@ li {
 }
 
 .brand {
+  margin-top: 2px;
+
   &.floating {
     padding-bottom: 3px;
     padding-top: 3px;
@@ -927,10 +929,6 @@ html {
 
   .brand {
     display: block;
-
-    &.floating {
-      display: none;
-    }
   }
 
   .mobilenav {

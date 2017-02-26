@@ -297,9 +297,11 @@ li {
   margin-bottom: 36px;
   margin-top: 5px; }
 
-.brand.floating {
-  padding-bottom: 3px;
-  padding-top: 3px; }
+.brand {
+  margin-top: 2px; }
+  .brand.floating {
+    padding-bottom: 3px;
+    padding-top: 3px; }
 
 .mobilenav {
   background-color: #d90246;
@@ -616,8 +618,6 @@ html .w-mod-js * [data-ix='hide-scroll-nav'] {
       box-shadow: none; }
   .brand {
     display: block; }
-    .brand.floating {
-      display: none; }
   .mobilenav {
     background-color: transparent;
     box-shadow: none; }
