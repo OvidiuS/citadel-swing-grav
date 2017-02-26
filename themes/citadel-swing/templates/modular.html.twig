@@ -5,9 +5,9 @@
 {% endblock %}
 
 {% block body %}
-	
+
 	{% for module in page.collection() %}
-        <div id="{{ _self.pageLinkName(module.menu) }}"></div>
+        <div id="{{ macros.pageLinkName(module.menu) }}"></div>
         {{ module.content }}
     {% endfor %}
 

@@ -1,4 +1,5 @@
 {% embed 'markup/section.html.twig' with {sectionClass : 'ticketInstructions'} %}
+
   {% block sectionContent %}
     <h2>{{ header.title }}</h2>
       <img src="/{{ (header.teachers_image | first).path }}" alt="{{ header.title}}">

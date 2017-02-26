@@ -131,7 +131,7 @@ li {
   font-family: Montserrat, sans-serif; }
 
 .pro-hero-wrapper {
-  cursor: pointer;
+  display: block;
   overflow: hidden;
   padding: 0 0 35px 7%; }
   .pro-hero-wrapper:hover {
@@ -196,8 +196,8 @@ li {
   float: right;
   font-family: Oswald, sans-serif;
   font-size: 34px;
-  line-height: .7em;
-  margin-top: 22px;
+  line-height: 1em;
+  margin-top: 5px;
   text-shadow: 0 1px 0 #000;
   width: 58%; }
 
@@ -730,7 +730,7 @@ html .w-mod-js * [data-ix='hide-scroll-nav'] {
     min-height: 0; }
   .mainTicketText {
     font-size: 14px;
-    text-shadow: 0 2px 1px #b7bec5; }
+    text-shadow: 0 2px 1px #e6e6e6; }
   .buyTicketsLink {
     padding: 0; }
     .buyTicketsLink:hover .ticketButtonText {

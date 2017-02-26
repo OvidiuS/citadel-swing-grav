@@ -21,6 +21,7 @@ $color-contessa: #cf6f6f; // desaturated medium red (brick)
 $color-vivid-tangerine: #ff8b8b; // lighter contessa
 $color-sundown: #ffb8b8; // light pink
 $color-cornflower-lilac: #ffa6a6; // lighter sundown
+$color-transparent-fuschia: rgba(182, 35, 35, .25);
 
 // yellows
 $color-dolly: #ffff86; // strong yellow
@@ -236,7 +237,7 @@ li {
 }
 
 .pro-hero-wrapper {
-  cursor: pointer;
+  display: block;
   overflow: hidden;
   padding: 0 0 35px 7%;
 
@@ -329,8 +330,8 @@ li {
   float: right;
   font-family: $big-heading-font;
   font-size: 34px;
-  line-height: .7em;
-  margin-top: 22px;
+  line-height: 1em;
+  margin-top: 5px;
   text-shadow: 0 1px 0 $blackest-color;
   width: 58%;
 }
@@ -405,7 +406,7 @@ li {
   color: $primary-color;
   display: block;
   font-size: 30px;
-  text-shadow: 0 2px 0 rgba(182, 35, 35, .25);
+  text-shadow: 0 2px 0 $color-transparent-fuschia;
 }
 
 .white-hack {
@@ -1116,7 +1117,7 @@ html {
 
   .mainTicketText {
     font-size: 14px;
-    text-shadow: 0 2px 1px #b7bec5;
+    text-shadow: 0 2px 1px $color-mercury;
   }
 
   .buyTicketsLink {

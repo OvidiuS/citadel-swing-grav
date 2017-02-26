@@ -3,24 +3,18 @@
 {% block herocontent %}
 				<h2 class="hero-subheading">22-24 September 2017 - Timisoara, Romania</h2>
 				<div class="w-row">
+
+					{% for pro in page.collection('pros') %}
 					<div class="w-col w-col-6">
-						<div class="w-clearfix pro-hero-wrapper" id="maximeTorryBioTrigger">
-							<h3 class="h3-white with">with:</h3><img src="{{ theme_url }}/images/maxime-zaoui-and-torri-smith.jpg" class="invitee-image">
-							<h3 class="invitee-title">Maxime Zzaoui<br><span class="origin">(EU, FR)</span></h3>
-							<h3 class="invitee-title">Torri Zzaoui<br><span class="origin">(US, CA)</span></h3>
-						</div>
+						<a href="/info/teachers#{{ macros.pageLinkName(pro.menu) }}" class="w-clearfix pro-hero-wrapper">
+							<h3 class="h3-white with">{{ loop.index == 1 ? 'with' : 'and' }}:</h3>
+							<img src="{{ (pro.header.teachers_image | first).path }}" class="invitee-image">
+							<h3 class="invitee-title">{{ pro.header.leader_name }}<br><span class="origin">({{ pro.header.leader_country }})</span></h3>
+							<h3 class="invitee-title">{{ pro.header.follower_name }}<br><span class="origin">({{ pro.header.follower_country}})</span></h3>
+						</a>
 					</div>
 					<!-- .w-col .w-col-6 -->
-
-					<!-- /.pro-bio-home -->
-					<div class="w-col w-col-6">
-						<div class="w-clearfix pro-hero-wrapper" id="adamRitaBioTrigger">
-							<h3 class="h3-white with">and</h3><img src="{{ theme_url }}/images/adam_balasy-and-rita_jori.jpg" class="invitee-image">
-							<h3 class="invitee-title">Adam Balasy<br><span class="origin">(EU, HU)</span></h3>
-							<h3 class="invitee-title">Rita Jori<br><span class="origin">(EU, HU)</span></h3>
-						</div>
-					</div>
-					<!-- /.w-col w-col-6 -->
+					{% endfor %}
 
 				</div>
 				<!-- /.w-row -->
