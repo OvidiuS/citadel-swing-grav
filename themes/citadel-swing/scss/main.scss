@@ -414,6 +414,11 @@ li {
 }
 
 .pricing-column-2 {
+  @include to(2) {
+    background-position: 16% 50%;
+    padding-left: 36%;
+  }
+
   background-image: url('../images/love.png');
   background-position: 0 50%;
   background-repeat: no-repeat;
@@ -422,6 +427,12 @@ li {
 }
 
 .pricing-column-1 {
+  @include to(2) {
+    background-position: 16% 50%;
+    margin-top: 30px;
+    padding-left: 36%;
+  }
+
   background-image: url('../images/price.png');
   background-position: 0 50%;
   background-repeat: no-repeat;
