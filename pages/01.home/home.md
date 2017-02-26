@@ -6,6 +6,12 @@ content:
         by: folder
         dir: asc
 main_heading_text_size: large
+pros:
+    items:
+        '@page.modular': /info/teachers
+    order:
+        by: folder
+        dir: asc
 ---
 
 # Grav is Running!

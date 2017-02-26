@@ -4590,48 +4590,6 @@ Webflow.require('ix').init([
 $( document ).ready(function() {
     //console.log( "ready!" );
 
-    $("#maximeTorryBioTrigger").click(function(){
-    	if ($(this).hasClass("selectedForBio")) {
-    		$(this).removeClass("selectedForBio");
-    		$(".pro-bio-home").hide();
-    	}else{
-    		if ( $( window ).width() > 991 ) {
-	    		var abioToggleTarget = $(".maxime-and-torri-bio.deskBio");
-	    	}else{
-	    		var abioToggleTarget = $(".maxime-and-torri-bio.mobileBio");
-	    	}
-	    	console.log(abioToggleTarget);
-	    	$(".invitee-wrapper").removeClass("selectedForBio");
-	    	$(".pro-bio-home").hide();
-			abioToggleTarget.show();
-			$(this).addClass("selectedForBio");
-			$(document.body).animate({
-			    'scrollTop':  $(this).offset().top
-			}, 500);
-	    }
-	});
-
-	$("#adamRitaBioTrigger").click(function(){
-		if ($(this).hasClass("selectedForBio")) {
-			$(this).removeClass("selectedForBio");
-			$(".pro-bio-home").hide();
-		}else{
-			if ( $( window ).width() > 991 ) {
-    		var bbioToggleTarget = $(".adam-and-rita-bio.deskBio");
-	    	}else{
-	    		var bbioToggleTarget = $(".adam-and-rita-bio.mobileBio");
-	    	}
-			$(".invitee-wrapper").removeClass("selectedForBio");
-			$(".pro-bio-home").hide();
-			bbioToggleTarget.show();
-			$(this).addClass("selectedForBio");
-			$(document.body).animate({
-			    'scrollTop':  $(this).offset().top
-			}, 500);
-		}
-		
-	});
-
 	$(".shceduleMoreLink").click(function(){
 		$(".cellDetailsVisible").removeClass("cellDetailsVisible");
 		//$(".shceduleMoreLink")

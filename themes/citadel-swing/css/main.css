@@ -130,11 +130,11 @@ li {
 .sumary-desc {
   font-family: Montserrat, sans-serif; }
 
-.invitee-wrapper {
-  cursor: pointer;
+.pro-hero-wrapper {
+  display: block;
   overflow: hidden;
   padding: 0 0 35px 7%; }
-  .invitee-wrapper:hover {
+  .pro-hero-wrapper:hover {
     background-color: rgba(179, 179, 179, 0.24); }
 
 .selectedForBio {
@@ -196,8 +196,8 @@ li {
   float: right;
   font-family: Oswald, sans-serif;
   font-size: 34px;
-  line-height: .7em;
-  margin-top: 22px;
+  line-height: 1em;
+  margin-top: 5px;
   text-shadow: 0 1px 0 #000;
   width: 58%; }
 
@@ -630,7 +630,7 @@ html .w-mod-js * [data-ix='hide-scroll-nav'] {
     padding-right: 2%; }
   .w--nav-menu-open {
     right: 2%; }
-  .invitee-wrapper {
+  .pro-hero-wrapper {
     padding-left: 8%; }
   .section {
     padding-bottom: 56px;
@@ -667,7 +667,7 @@ html .w-mod-js * [data-ix='hide-scroll-nav'] {
   .summary-column {
     padding-left: 7%;
     padding-right: 7%; }
-  .invitee-wrapper {
+  .pro-hero-wrapper {
     padding-left: 1%; }
   .section.red {
     padding-bottom: 50px;
@@ -730,7 +730,7 @@ html .w-mod-js * [data-ix='hide-scroll-nav'] {
     min-height: 0; }
   .mainTicketText {
     font-size: 14px;
-    text-shadow: 0 2px 1px #b7bec5; }
+    text-shadow: 0 2px 1px #e6e6e6; }
   .buyTicketsLink {
     padding: 0; }
     .buyTicketsLink:hover .ticketButtonText {
