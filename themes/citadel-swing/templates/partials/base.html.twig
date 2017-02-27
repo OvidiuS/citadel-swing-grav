@@ -28,10 +28,12 @@
     {% block javascripts %}
         {% do assets.addJs('https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js', 101) %}
         {% do assets.addJs('theme://js/modernizr.js', 100) %}
-        {% do assets.addJs('https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js', 100) %}
-        {% do assets.addJs('theme://js/webflow.js', 100) %}
+        {% do assets.addJs('https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js', 99) %}
+        {% do assets.addJs('//cdn.foxycart.com/citadelswing/loader.js', 98) %}
+        {% do assets.addJs('theme://js/webflow.js',97) %}
     {% endblock %}
     {{ assets.js() }}
+
 	<script>
 		WebFont.load({
 			google: {

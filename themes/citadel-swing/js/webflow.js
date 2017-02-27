@@ -44,5 +44,27 @@ $( document ).ready(function() {
 		}
 	});
 
+	$( "#fcform" ).submit(function( event ) {
+  	$('#fcFormTitle').text('Buy More Tickets');
+  //event.preventDefault();
+});
 
 });
+
+var FC = FC || {};
+FC.onLoad = function () {
+	FC.client.on('ready.done', function () {
+		$('#minicart').show();
+
+		FC.client.on('sidecart-hide', function(params) {
+			//console.log('bu!');
+			$(':input','#fcform')
+			 .not(':button, :submit, :reset, :hidden')
+			 .val('')
+			 .removeAttr('checked')
+			 .removeAttr('selected');
+			return true;
+		});
+
+	});
+};
