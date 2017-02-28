@@ -44,10 +44,55 @@ $( document ).ready(function() {
 		}
 	});
 
-	$( "#fcform" ).submit(function( event ) {
-  	$('#fcFormTitle').text('Buy More Tickets');
-  //event.preventDefault();
-});
+	$('#fcform').bootstrapValidator({
+        // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            owner: {
+                validators: {
+                        stringLength: {
+                        min: 2,
+                    },
+                        notEmpty: {
+                        message: 'Please supply the ticket holder name'
+                    }
+                }
+            },
+						role: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please select your workshop role (leader or follower)'
+                    }
+                }
+            },
+						level: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please select your workshop level.'
+                    }
+                }
+            }
+            }
+        }).off('success.form.bv')
+        .on('success.form.bv', function(e) {
+            // Prevent form submission
+            e.preventDefault();
+
+        });
+
+				// $("#fcform").submit(function(e){
+				//   e.preventDefault();
+				// });
+
+// $( "#fcform" ).submit(function( event ) {
+//   	$('#fcFormTitle').text('Buy More Tickets');
+//   //event.preventDefault();
+// });
+
 
 });
 
@@ -57,14 +102,40 @@ FC.onLoad = function () {
 		$('#minicart').show();
 
 		FC.client.on('sidecart-hide', function(params) {
-			//console.log('bu!');
-			$(':input','#fcform')
-			 .not(':button, :submit, :reset, :hidden')
-			 .val('')
-			 .removeAttr('checked')
-			 .removeAttr('selected');
+			console.log('bu!');
+			$('form#fcform').data('bootstrapValidator').resetForm();
+			$("form#fcform")[0].reset();
+			if (!$.isEmptyObject(FC.json.items)) {
+				$('#fcFormTitle').html('You<span data-fc-id="minicart-quantity">0</span> have '+FC.json.items.length+' tickets in your <a href="https://citadelswing.foxycart.com/cart?cart=view">cart</a>! Add more? :)');
+			}
 			return true;
 		});
+
+		FC.client.on('cart-submit', function(params, next) {
+        $element = $(params.element);
+        if (
+					  $element.attr('id') == 'fcform'
+					  && (
+							(
+								$element.find('[name="owner"]').length > 0
+					  		&& !$element.find('[name="owner"]').val()
+							) ||
+							(
+								$element.find('[name="role"]').length > 0
+						  	&& !$element.find('[name="role"]').val()
+							) ||
+							(
+								$element.find('[name="level"]').length > 0
+						  	&& !$element.find('[name="level"]').val()
+							)
+						)
+					)
+				{
+            //alert('Date must be filled out');
+        } else {
+            next();
+        }
+    });
 
 	});
 };
