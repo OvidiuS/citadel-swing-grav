@@ -28,7 +28,7 @@ Some tickets ask for a workshop level. Here's what the different levels are:
 </h2>
 
 
-<form class="well form-horizontal" action="https://citadelswing.foxycart.com/cart" method="post"  id="fcform">
+<form class="well form-horizontal" action="https://citadelswing.foxycart.com/cart" method="post"  id="fcform" data-toggle="validator">
 <fieldset>
   <input type="hidden" name="name" value="Full Pass - Early Bird" />
   <input type="hidden" name="price" value="80" />
@@ -36,18 +36,19 @@ Some tickets ask for a workshop level. Here's what the different levels are:
   <input type="hidden" name="quantity" value="1" />
 
 <!-- Form Name -->
-<legend>Wpr</legend>
+<legend>Workshop Passes</legend>
 
 <!-- Text input-->
 
 <div class="form-group">
   <label class="col-md-4 control-label">Ticket Holder Name</label>
   <div class="col-md-4 inputGroupContainer">
-  <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="owner" placeholder="Full Name" class="form-control"  type="text">
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input  name="owner" placeholder="Full Name" class="form-control"  type="text" required>
     </div>
   </div>
+  <div class="help-block with-errors"></div>
 </div>
 
 <div class="form-group">
@@ -65,13 +66,14 @@ Some tickets ask for a workshop level. Here's what the different levels are:
     <div class="col-md-4 selectContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-    <select name="role" class="form-control selectpicker" >
+    <select name="role" class="form-control selectpicker" required data-required-error="Please select a role.">
       <option value="" default>please select</option>
       <option value="leader{c+-RL}">Leader</option>
       <option value="follower{c+-RF}">Follower</option>
     </select>
   </div>
 </div>
+<div class="help-block with-errors"></div>
 </div>
 
 <div class="form-group">
@@ -79,7 +81,7 @@ Some tickets ask for a workshop level. Here's what the different levels are:
     <div class="col-md-4 selectContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-    <select name="level" class="form-control selectpicker" >
+    <select name="level" class="form-control selectpicker" required data-required-error="Please select a level.">
       <option value="" default>please select</option>
       <option value="2{c+-L2}">Level 2</option>
       <option value="3{c+-L3}">Level 3</option>
@@ -87,6 +89,7 @@ Some tickets ask for a workshop level. Here's what the different levels are:
     </select>
   </div>
 </div>
+<div class="help-block with-errors"></div>
 </div>
 
 <!-- Success message -->
