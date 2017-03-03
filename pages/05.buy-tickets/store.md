@@ -1,5 +1,8 @@
 ---
 title: 'Buy Tickets'
+process:
+    markdown: true
+    twig: false
 ---
 
 ### How to select your workshop level (where applicable)

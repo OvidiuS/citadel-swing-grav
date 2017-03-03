@@ -101,6 +101,36 @@ li {
   margin-bottom: .5em;
 }
 
+input {
+  &[type='checkbox'] {
+    // background: url('http://refundfx.com.au/uploads/image/checkbox_full.png');
+    background-repeat: no-repeat;
+    background-size: 40px;
+    height: 40px;
+    margin: 20px 0 0;
+    width: 40px;
+  }
+}
+
+label {
+  &.checkboxLabel {
+    font-size: 20px;
+  }
+}
+
+.redBg {
+  background-color: $primary-color;
+  color: $color-white;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    color: inherit;
+  }
+}
+
 .hero {
   background-color: $primary-color;
   background-image: none;
@@ -1373,4 +1403,9 @@ html {
   h3 {
     font-size: 1.5em;
   }
+}
+
+.formSectionHeader {
+  margin-bottom: 30px;
+  padding: 20px;
 }

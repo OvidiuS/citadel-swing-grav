@@ -17,9 +17,11 @@
     {% block stylesheets %}{# do assets.addCss('http://yui.yahooapis.com/pure/0.6.0/pure-min.css', 100) #}
         {% do assets.addCss('theme://css/normalize.css', 100) %}
         {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', 99) %}
-        {% do assets.addCss('theme://css/webflow.css', 98) %}
-        {% do assets.addCss('theme://css/main.css', 97) %}
-        {% do assets.addCss('theme://css/custom.css', 96) %}
+        {% do assets.addCss('//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css', 98) %}
+        {% do assets.addCss('//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css', 97) %}
+        {% do assets.addCss('theme://css/webflow.css', 95) %}
+        {% do assets.addCss('theme://css/main.css', 94) %}
+        {% do assets.addCss('theme://css/custom.css', 93) %}
 
 
     {% endblock %}
@@ -28,10 +30,14 @@
     {% block javascripts %}
         {% do assets.addJs('https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js', 101) %}
         {% do assets.addJs('theme://js/modernizr.js', 100) %}
-        {% do assets.addJs('https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js', 100) %}
-        {% do assets.addJs('theme://js/webflow.js', 100) %}
+        {% do assets.addJs('https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js', 99) %}
+        {% do assets.addJs('//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js', 98) %}
+        {% do assets.addJs('theme://js/validator.js', 97) %}
+        {% do assets.addJs('//cdn.foxycart.com/citadelswing/loader.js', 96) %}
+        {% do assets.addJs('theme://js/webflow.js',95) %}
     {% endblock %}
     {{ assets.js() }}
+
 	<script>
 		WebFont.load({
 			google: {

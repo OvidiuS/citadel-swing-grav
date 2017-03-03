@@ -30,6 +30,26 @@ p.bigSolo {
 li {
   margin-bottom: .5em; }
 
+input[type='checkbox'] {
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 40px;
+  margin: 20px 0 0;
+  width: 40px; }
+
+label.checkboxLabel {
+  font-size: 20px; }
+
+.redBg {
+  background-color: #d90246;
+  color: #fff; }
+  .redBg h1,
+  .redBg h2,
+  .redBg h3,
+  .redBg h4,
+  .redBg p {
+    color: inherit; }
+
 .hero {
   background-color: #d90246;
   background-image: none;
@@ -905,4 +925,6 @@ html .w-mod-js * [data-ix='hide-scroll-nav'] {
   .ticket h3 {
     font-size: 1.5em; }
 
-/*# sourceMappingURL=main.css.map */
+.formSectionHeader {
+  margin-bottom: 30px;
+  padding: 20px; }
