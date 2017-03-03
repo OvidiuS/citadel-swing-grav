@@ -6,7 +6,7 @@ $( document ).ready(function() {
 		$(this).next('.w-dropdown-list').toggleClass('w--open');
 	});
 
-	$('.w-nav-button').parents('.w-nav').append('<div class="w-nav-overlay"></div>')
+	$('.w-nav-button').parents('.w-nav').append('<div class="w-nav-overlay"></div>');
 
 	$('.w-nav-button').click(function(){
 		var on = $(this).data('on');

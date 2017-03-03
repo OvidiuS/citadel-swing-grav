@@ -926,7 +926,5 @@ html .w-mod-js * [data-ix='hide-scroll-nav'] {
     font-size: 1.5em; }
 
 .formSectionHeader {
-  padding: 20px;
-  margin-bottom: 30px; }
-
-/*# sourceMappingURL=main.css.map */
+  margin-bottom: 30px;
+  padding: 20px; }
