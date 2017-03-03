@@ -1,0 +1,21 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block body %}
+{% embed 'markup/section.html.twig' %}
+	{% block sectionContent %}
+      {{ page.content }}
+      <h2 id="" data-fc-id="minicart-empty">Buy tickets</h2>
+
+      <h2 data-fc-id="minicart" id="" style="display:none;">
+      	 You have
+      		<a href="https://citadelswing.foxycart.com/cart?cart=view"><span data-fc-id="minicart-quantity">0</span>
+      		<span data-fc-id="minicart-singular"> ticket </span>
+      		<span data-fc-id="minicart-plural"> tickets </span></a>
+      		in your <a href="https://citadelswing.foxycart.com/cart?cart=view">cart</a>. Add more? :) <!-- Total cost: $
+      		<span data-fc-id="minicart-order-total">0</span> -->
+      	</a>
+      </h2>
+      {% include 'includes/order-form-crypt.html.twig' %}
+	{% endblock %}
+{% endembed %}
+{% endblock %}

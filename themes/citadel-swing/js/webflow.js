@@ -56,28 +56,36 @@ $( document ).ready(function() {
 		 }
 	});
 
-	var fullPassFields = $('#fullPass').find(':input').not('#fake');
-	var partyPassFields = $('#partyPass').find(':input').not('#fake');
+	var fullPassFields = $('div#fullPass').find(':input').not('#fake');
+	var partyPassFields = $('div#partyPass').find(':input').not('#fake');
+	var fullPassOwnerField =  $('input#visibleOwnerField');
+	var partyPassOwnerField =  $('input#partyPassOwnerField');
 
 	// activate form section in accordion
 	$('#fullPassLink').click(function(){
 		partyPassFields.prop( "disabled", true );
 		fullPassFields.prop( "disabled", false );
 		$('#wrkshpFormSubmit').prop( "disabled", false );
+		fullPassOwnerField.prop( "disabled", false ).show();
+		partyPassOwnerField.prop( "disabled", true ).hide();
+		fullPassOwnerField.val(partyPassOwnerField.val());
 	});
 	$('#partyPassLink').click(function(){
 		fullPassFields.prop( "disabled", true );
 		partyPassFields.prop( "disabled", false );
+		partyPassOwnerField.prop( "disabled", false ).show();
+		fullPassOwnerField.prop( "disabled", true ).hide();
+		partyPassOwnerField.val(fullPassOwnerField.val());
 		$('#wrkshpFormSubmit').prop( "disabled", false );
 	});
 	// copy the Owner field to the Styling workshop 2:owner field
 	$("input#visibleOwnerField").blur( function() {
-    //console.log($(this).val());
 		$("input.inVisibleOwnerField").val($(this).val());
-		//( $('input[id$=search_field]').val() );
 	});
 	$('#visibleRoleSelect').on('change', function() {
-		$("input.inVisibleRoleField").val(this.value);
+		console.log($('#visibleRoleSelect')[0].selectedIndex);
+		$("select#inVisibleRoleSelect").prop('selectedIndex', $('#visibleRoleSelect')[0].selectedIndex);
+		//$("input.inVisibleRoleField").val(this.value);
 	});
 });
 
