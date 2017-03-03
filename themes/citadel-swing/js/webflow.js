@@ -76,6 +76,9 @@ $( document ).ready(function() {
 		$("input.inVisibleOwnerField").val($(this).val());
 		//( $('input[id$=search_field]').val() );
 	});
+	$('#visibleRoleSelect').on('change', function() {
+		$("input.inVisibleRoleField").val(this.value);
+	});
 });
 
 
