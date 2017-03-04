@@ -1277,7 +1277,13 @@ html {
 }
 
 .halfBgContainer {
+
+  @include at(1) {
+    width: auto;
+  }
+
   padding-top: 20px;
+  width: 50%;
 
   &.over-left {
 

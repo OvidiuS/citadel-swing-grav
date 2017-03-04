@@ -837,7 +837,11 @@ html .w-mod-js * [data-ix='hide-scroll-nav'] {
   right: 0; }
 
 .halfBgContainer {
-  padding-top: 20px; }
+  padding-top: 20px;
+  width: 50%; }
+  @media (max-width: 479px) {
+    .halfBgContainer {
+      width: auto; } }
   .halfBgContainer.over-left {
     margin-left: 50%;
     padding-left: 2%;
