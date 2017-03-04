@@ -1,0 +1,16 @@
+{% extends 'modular.html.twig' %}
+
+{% block body %}
+
+	{% for module in page.collection() %}
+
+        {% embed 'markup/section.html.twig' with { sectionClass : cycle(['alternateSection', ''], loop.index) } %}
+
+          {% block sectionContent %}
+            {{ module.content }}
+          {% endblock %}
+
+        {% endembed %}
+    {% endfor %}
+
+{% endblock %}
