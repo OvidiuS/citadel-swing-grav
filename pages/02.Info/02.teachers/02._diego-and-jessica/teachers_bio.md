@@ -6,7 +6,7 @@ follower_name: 'Jessica Pacheco Caetano'
 follower_country: FR
 visible: true
 teachers_image:
-    user/pages/02.Info/02.teachers/02._diego-and-jessica/diego_borges-and-jessica_pacheco_caetano.jpg:
+    user/pages/02.Info/01.teachers/02._diego-and-jessica/diego_borges-and-jessica_pacheco_caetano.jpg:
         name: diego_borges-and-jessica_pacheco_caetano.jpg
         type: image/jpeg
         size: 12537

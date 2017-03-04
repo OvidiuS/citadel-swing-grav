@@ -6,7 +6,7 @@ follower_name: 'Rita Jori'
 follower_country: HU
 visible: true
 teachers_image:
-    user/pages/02.Info/02.teachers/01._adam-and-rita/adam_balasy-and-rita_jori.jpg:
+    user/pages/02.Info/01.teachers/01._adam-and-rita/adam_balasy-and-rita_jori.jpg:
         name: adam_balasy-and-rita_jori.jpg
         type: image/jpeg
         size: 15204

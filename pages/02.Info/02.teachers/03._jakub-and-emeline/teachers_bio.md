@@ -5,7 +5,7 @@ leader_country: CZE
 follower_name: 'Emeline Rochefeuille'
 follower_country: FR
 teachers_image:
-    user/pages/02.Info/02.teachers/03._jakub-and-emeline/jakub_jakoubek-and-emeline_rochefeuille.jpg:
+    user/pages/02.Info/01.teachers/03._jakub-and-emeline/jakub_jakoubek-and-emeline_rochefeuille.jpg:
         name: jakub_jakoubek-and-emeline_rochefeuille.jpg
         type: image/jpeg
         size: 10020
