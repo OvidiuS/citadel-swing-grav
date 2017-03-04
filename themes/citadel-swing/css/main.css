@@ -444,7 +444,7 @@ html .w-mod-js * [data-ix='hide-scroll-nav'] {
   font-size: 60px;
   line-height: 1.5em; }
 
-.ticketInstructions {
+.shortSection {
   padding: 20px 2% 0; }
 
 .pro-bio-home {
@@ -682,7 +682,7 @@ html .w-mod-js * [data-ix='hide-scroll-nav'] {
   .container {
     padding-left: 2%;
     padding-right: 2%; }
-  .ticketInstructions {
+  .shortSection {
     padding: 20px 2% 0; }
   .footerSection {
     padding: 15px 10px 10px; } }
@@ -928,3 +928,5 @@ html .w-mod-js * [data-ix='hide-scroll-nav'] {
 .formSectionHeader {
   margin-bottom: 30px;
   padding: 20px; }
+
+/*# sourceMappingURL=main.css.map */

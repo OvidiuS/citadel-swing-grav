@@ -1,11 +1,13 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block body %}
-<div class="w-section section ticketInstructions">
-  <div class="w-container container">
+
+{% embed 'markup/section.html.twig' with {sectionClass : 'shortSection'} %}
+
+  {% block sectionContent %}
     {{ page.content }}
-  </div>
-  <!-- /.w-container .container  -->
-</div>
-<!-- /.w-section section -->
+  {% endblock %}
+  
+{% endembed %}
+
 {% endblock %}
