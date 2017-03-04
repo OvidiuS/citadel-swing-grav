@@ -638,9 +638,6 @@ html .w-mod-js * [data-ix='hide-scroll-nav'] {
       box-shadow: none; }
   .brand {
     display: block; }
-  .mobilenav {
-    background-color: transparent;
-    box-shadow: none; }
   .textContainer404 {
     float: none;
     padding-top: 20px;
