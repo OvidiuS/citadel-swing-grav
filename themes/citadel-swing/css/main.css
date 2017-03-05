@@ -127,7 +127,8 @@ label.checkboxLabel {
   .main-menu-item.subitem {
     background-color: #fff;
     border-top: 1px solid #d90246;
-    color: #d90246; }
+    color: #d90246;
+    padding: 15px 15px; }
     .main-menu-item.subitem:hover {
       color: #000; }
   .main-menu-item.w--current {
