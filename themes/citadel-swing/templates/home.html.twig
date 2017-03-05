@@ -8,7 +8,7 @@
 					<div class="w-col w-col-6">
 						<a href="/info/teachers#{{ macros.pageLinkName(pro.menu) }}" class="w-clearfix pro-hero-wrapper">
 							<h3 class="h3-white with">{{ loop.index == 1 ? 'with' : 'and' }}:</h3>
-							<img src="{{ (pro.header.teachers_image | first).path }}" class="invitee-image">
+							<img src="{{ pro.url }}/{{ pro.header.teachers_image }}" class="invitee-image">
 							<h3 class="invitee-title">{{ pro.header.leader_name }}<br><span class="origin">({{ pro.header.leader_country }})</span></h3>
 							<h3 class="invitee-title">{{ pro.header.follower_name }}<br><span class="origin">({{ pro.header.follower_country}})</span></h3>
 						</a>

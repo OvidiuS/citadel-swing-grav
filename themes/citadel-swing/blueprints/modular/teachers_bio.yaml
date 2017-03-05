@@ -63,14 +63,17 @@ form:
                 message: 'Please add a Biography'
 
             header.teachers_image:
-              type: file
+              type: filepicker
               ordering@: 1
               label: Image of the teachers
-              destination: self@
+              folder: self@
               multiple: false
-              accept:
-                - image/*
+              preview_images: true
+              acccept:
+                - .png
+                - .jpg
 
             uploads:
-              type: hidden
+
+              type: pagemedia
               label: PLUGIN_ADMIN.PAGE_MEDIA
