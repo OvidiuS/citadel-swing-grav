@@ -56,7 +56,7 @@ $adam-rita-color: $color-green;
 $maxime-torri-color: $color-yellow;
 $blackest-color: $color-black;
 
-$header-hover-color: rgba(179, 179, 179, .24);
+$header-hover-color: rgba(81, 13, 13, 0.23);
 
 $big-heading-font: Oswald, sans-serif;
 $subheading-font: Montserrat, sans-serif;
@@ -100,7 +100,11 @@ p {
 li {
   margin-bottom: .5em;
 }
-
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
 input {
   &[type='checkbox'] {
     // background: url('http://refundfx.com.au/uploads/image/checkbox_full.png');
