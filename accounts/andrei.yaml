@@ -1,0 +1,11 @@
+email: info@citadelswing.ro
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+fullname: 'Andrei Bereczki'
+title: Haralambie
+state: enabled
+hashed_password: $2y$10$4mFWZyvxQoHPIn7xY0Edk.bHe2y.O1kN.QWfyNe2ElqdfHbHn.By6
