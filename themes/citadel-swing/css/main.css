@@ -940,3 +940,9 @@ html .w-mod-js * [data-ix='hide-scroll-nav'] {
 .formSectionHeader {
   margin-bottom: 30px;
   padding: 20px; }
+
+@media (max-width: 991px) {
+  .form-horizontal .control-label {
+    margin-bottom: 0;
+    padding-top: 7px;
+    text-align: left; } }
