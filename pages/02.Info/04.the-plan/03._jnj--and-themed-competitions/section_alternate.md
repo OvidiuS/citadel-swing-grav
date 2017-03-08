@@ -11,7 +11,7 @@ Registration for the JnJ competitions end on Saturday, 17:00! Late entries will 
 ### Marshalling
 Your competition starts on Saturday, 19:00 with Marshalling!
 
-We will post the heats in time so you know when you have to participate. We will place you in the right order and the whole heat marches onto the dancefloor at once. This will help us be on time.
+We will post the heats in time so you know when you have to participate. We will place you in the right order and the whole heat marches onto the dance-floor at once. This will help us be on time.
 
 ### Themed Competition
 On Friday night at 22:00 everybody will participate in this really fun competition. The rules will be announced on the spot. Keep that tension rising ... >:)

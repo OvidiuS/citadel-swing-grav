@@ -8,4 +8,3 @@ content:
 main_heading_text_size: small
 ---
 
-faqs

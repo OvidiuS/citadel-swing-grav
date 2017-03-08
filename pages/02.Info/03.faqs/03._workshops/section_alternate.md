@@ -12,16 +12,10 @@ After the audition you will receive your event wristband at the registration des
 
 If you have missed your audition or have any problem with it, please look for Andrei or Lumi.
 
-### What if I have a Joker Pass?
+### Does the the optional Styling Workshop cost extra?
 
-The Joker Pass allows you to participate in the other level of workshops. There are two opportunities to make use of the Joker pass  each day, one for each level:
+Yes, the Styling Workshop is an additional 2 hours of training, one hour with <strong>Diego &amp; Jessica</strong> and one with <strong>Jakub &amp; Emeline. The cost is &euro;35, and you can purchase a ticket by selecting the extra option when you get your normal Workshop Pass.
 
-**If you are level 2-3**, you can use the Joker pass to attend the level 4+ workshops on:
+### Can I pay for just the Styling Workshop?
 
-* Saturday the 24th - Level 4+ Workshop with Adam & Rita from 15:30 to 16:30;
-* Sunday the 25th - Level 4+ Workshop with Maxime and Torri from 13:10 to 14:10.
-
-**If you are level 4+**, you can use the Joker pass to attend the level 2-3 workshops on:
-
-* Saturday the 24th - Level 2-3 Workshop with Maxime and Torri from  13:10 to 14:10;
-* Sunday the 25th - Level 2-3 Workshop with Adam & Rita from 15:30 to 16:30.
+We wanted the Styling Workshop to be a bonus addition for people already participating in the main workshops. As such, you can only purchase a Styling Workshop ticket along with a Workshop Pass. 
