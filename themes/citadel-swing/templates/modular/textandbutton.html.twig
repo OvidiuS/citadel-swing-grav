@@ -1,6 +1,7 @@
 	{% embed 'markup/section.html.twig' with {sectionClass : 'join-us'} %}
 	  {% block sectionContent %}
-			<h2 class="join-us-heading">Join us</h2>
-			<h3 class="join-us-subheading">and let&#39;s make this event <br>a <strong>success story</strong> together!</h3><a href="https://www.facebook.com/events/1745247759041067/" target="_blank" class="w-button button">Facebook Event Page &gt;</a>
+			<h2 class="join-us-heading">{{ page.title }}</h2>
+			{{ page.content }}
+      <a href="{{ header.button_url }}" target="_blank" class="w-button button">{{ header.button_text }}</a>
 	  {% endblock %}
 	{% endembed %}
