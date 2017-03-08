@@ -193,6 +193,12 @@ label.checkboxLabel {
     padding-top: 106px; }
     .section.red.alternateTop {
       border-color: #e6e6e6; }
+    .section.red h1,
+    .section.red h2,
+    .section.red h3,
+    .section.red h4,
+    .section.red h5 {
+      color: #fff; }
   .section.join-us {
     background: linear-gradient(to right, #fff 44%, rgba(255, 255, 255, 0) 100%), url("../images/bastion-timisoara.jpg");
     background-position: 0 0, 100% 50%;

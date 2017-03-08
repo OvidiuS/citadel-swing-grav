@@ -330,6 +330,13 @@ label {
       border-color: $background-color-alternate;
     }
 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      color: $background-color;
+    }
   }
 
   &.join-us {
