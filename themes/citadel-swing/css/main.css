@@ -366,7 +366,8 @@ html .w-mod-js * [data-ix='hide-scroll-nav'] {
   text-align: center;
   text-decoration: none;
   text-overflow: ellipsis;
-  transition: all 200ms ease-in-out 0s; }
+  transition: all 200ms ease-in-out 0s;
+  box-shadow: none; }
   .buyTicketsLink:hover {
     background-color: #fff;
     margin-top: 0; }
@@ -933,5 +934,3 @@ html .w-mod-js * [data-ix='hide-scroll-nav'] {
 .formSectionHeader {
   margin-bottom: 30px;
   padding: 20px; }
-
-/*# sourceMappingURL=main.css.map */
