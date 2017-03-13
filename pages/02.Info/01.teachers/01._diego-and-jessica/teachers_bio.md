@@ -2,9 +2,9 @@
 title: 'Diego & Jessica'
 teachers_image: diego_borges-and-jessica_pacheco_caetano.jpg
 leader_name: 'Diego Borges'
-leader_country: BRA
+leader_country: BR
 follower_name: 'Jessica Pacheco Caetano'
-follower_country: FR
+follower_country: BR
 visible: true
 ---
 

@@ -4,7 +4,7 @@ teachers_image: ludovic_peregrin_pardou-and-nataliya_kharlanova.jpg
 leader_name: 'Ludovic Peregrin Pardou'
 leader_country: FR
 follower_name: 'Nataliya Kharlanova'
-follower_country: RU
+follower_country: UA
 ---
 
 **Nataliya** is an All-Stars level dancer from Ukraine, where she teaches and dances regularly. She is an upcoming WCS star in Europe who recently joined a new dance partnership with successful WCS professional from France, Ludovic Pelegrin. Aside from WCS, she has dance experience in Zouk, Tango and Salsa. In 2014, she won the European spin contest with a total of 61 spins. She is a talented spinner but also a risk taker on the social dance floor creating art through her dance movements every time.

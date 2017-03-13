@@ -2,7 +2,7 @@
 title: 'Jakub & Emeline'
 teachers_image: jakub_jakoubek-and-emeline_rochefeuille.jpg
 leader_name: 'Jakub Jakoubek'
-leader_country: CZE
+leader_country: CZ
 follower_name: 'Emeline Rochefeuille'
 follower_country: FR
 ---
