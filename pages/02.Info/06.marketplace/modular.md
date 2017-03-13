@@ -1,5 +1,5 @@
 ---
-title: Market
+title: Marketplace
 content:
     items: '@self.modular'
     order:
