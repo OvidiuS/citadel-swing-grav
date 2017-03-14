@@ -1,0 +1,4 @@
+title: Sections Alternate
+extends@:
+  type: modular
+  context: blueprints://
