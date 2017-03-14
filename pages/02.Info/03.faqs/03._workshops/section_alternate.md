@@ -12,6 +12,9 @@ After the audition you will receive your event wristband at the registration des
 
 If you have missed your audition or have any problem with it, please look for Andrei or Lumi.
 
+### Are the workshops gender balanced?
+Yes. We will take extra special care during the registration &amp; audition process in order for every level to have a 50 - 50 gender balance. We want to ensure that all of you get the maximum benefit out of your workshops and that you don't spend half of it waiting for a leader or a follower.
+
 ### Does the the optional Styling Workshop cost extra?
 
 Yes, the Styling Workshop is an additional 2 hours of training, one hour with **Diego &amp; Jessica** and one with **Jakub &amp; Emeline**. The cost is &euro;35, and you can purchase a ticket by selecting the extra option when you get your normal Workshop Pass.

@@ -7,3 +7,5 @@ Your workshops start on Friday at 17:00 with the Auditions. You will get 3 songs
 This will help us ensure that you picked the right level for you, so you can get the most out of this Event. After the audition you will receive your event wristband at the registration desk.
 
 If you have missed your audition or have any problem with it, please look for Andrei or Lumi.
+
+**Our workshops will be gender balanced**. This means that for each level we will ensure a 50 - 50 % participation of both leaders & followers. This also means that, at some point, we will have to close registration for one role, so make sure to register as soon as possible to secure your place.
