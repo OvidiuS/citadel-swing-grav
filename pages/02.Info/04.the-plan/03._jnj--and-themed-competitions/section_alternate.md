@@ -2,7 +2,7 @@
 title: 'JnJ + Themed Competitions'
 ---
 
-For this edition of Citadel Swing we are only offering four JnJ competition levels: Newcomer, Novice, Intermediate and Advanced.
+For this edition of Citadel Swing we are offering four JnJ competition levels: Newcomer, Novice, Intermediate and Advanced.
 
 Registration for the JnJ competitions end on Saturday, 14:55! Late entries will not be accepted, sorry! You will get 3 songs. You will rotate before each song.
 

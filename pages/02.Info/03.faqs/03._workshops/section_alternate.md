@@ -14,7 +14,7 @@ If you have missed your audition or have any problem with it, please look for An
 
 ### Does the the optional Styling Workshop cost extra?
 
-Yes, the Styling Workshop is an additional 2 hours of training, one hour with <strong>Diego &amp; Jessica</strong> and one with <strong>Jakub &amp; Emeline. The cost is &euro;35, and you can purchase a ticket by selecting the extra option when you get your normal Workshop Pass.
+Yes, the Styling Workshop is an additional 2 hours of training, one hour with **Diego &amp; Jessica** and one with **Jakub &amp; Emeline**. The cost is &euro;35, and you can purchase a ticket by selecting the extra option when you get your normal Workshop Pass.
 
 ### Can I pay for just the Styling Workshop?
 

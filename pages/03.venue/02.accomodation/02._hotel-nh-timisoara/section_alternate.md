@@ -1,10 +1,10 @@
 ---
-title: 'The nH Timisoara Hotel'
+title: 'Hotel NH Timisoara'
 ---
 
-![Entrance of the NH Timisoara Hotel](nh_timisoara-083-facade.jpg)
+![Entrance of the Hotel NH Timisoara](nh_timisoara-083-facade.jpg)
 
-The NH Timisoara hotel enjoys a great location in a peaceful area opposite the People’s Park. The beautiful Bega river is right across the street, while the city center is only a 15-minute walk away.
+Hotel NH Timisoara enjoys a great location in a peaceful area opposite the People’s Park. The beautiful Bega river is right across the street, while the city center is only a 15-minute walk away.
 * a short walk from the city’s business and cultural districts
 * peaceful, pretty area near the university
 * 15-minute walk from the center of town

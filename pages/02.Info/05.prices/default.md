@@ -7,21 +7,21 @@ title: Prices
 
       <div class="ticket">
         <h2>Early Bird Pass - &euro;95</h2>
-        <h3>Sales end May the 16th</h3>
+        <h3>Sales end April the 16th</h3>
         <p>This includes full access to the workshop level of your choice (8 hours total), full access to all 3 parties and the possibility to register for the JnJ competition.</p>
       </div>
       <!-- /.ticket -->
 
       <div class="ticket upcoming">
         <h2>Normal Bird Pass - &euro;110</h2>
-        <h3>Sales May 17th - June 11th</h3>
+        <h3>Sales May 17th - June 18th</h3>
         <p>This includes full access to the workshop level of your choice (8 hours total), full access to all 3 parties and the possibility to register for the JnJ competition.</p>
       </div>
       <!-- /.ticket -->
 
       <div class="ticket upcoming">
         <h2>Late Bird Pass - &euro;125</h2>
-        <h3>Sales June 12th - August 31st</h3>
+        <h3>Sales June 19th - August 31st</h3>
         <p>This includes full access to the workshop level of your choice (8 hours total), full access to all 3 parties and the possibility to register for the JnJ competition.</p>
       </div>
       <!-- /.ticket -->
@@ -51,7 +51,7 @@ title: Prices
       <div class="ticket">
         <h2>Party Pass - &euro;80</h2>
         <h3>Sales end on Sept. 22nd, 2017</h3>
-        <p>Full access to all 3 parties. <strong>You don't need this if you buy any workshop pass</strong>. This is only for those who don't want to attend the workshops but still want to get down and party with everyone else. You can still register for the JnJ competition with just this pass.</p>
+        <p>Full access to all 3 parties. <strong>You don't need this if you buy any workshop pass</strong>. This is only for those who don't want to attend the workshops but still want to get down and party with everyone else. This pass also gives you the possibility to register to JnJ competitions.</p>
       </div>
       <!-- /.ticket -->
 

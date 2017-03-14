@@ -1,12 +1,12 @@
 ---
-title: Balroom
+title: Ballroom
 ---
 
 The event will be held at **The Dance Stage** which includes **2 ballrooms and 4 smaller dance studios**. 
 
-The Citadel Swing workshops will be held in 3 separate rooms, totalling to a whopping 700 square meters of wooden dance floor. Air conditioning is a given, so that none of you will run sweaty off the dance floor.
+The Citadel Swing workshops will be held in 3 separate rooms, totaling to a whopping 700 square meters of wooden dance floor. Air conditioning is a given, so that none of you will run sweaty off the dance floor.
 
-As for the parties, check out the video below for a sneak peek: [embeded video de pe vimeo - link will follow]
+As for the parties, check out the video below for a sneak peek: [embedded video de pe vimeo - link will follow]
 
 Location of the venue is only 15 minutes away from the city center and 5 minutes walking distance away from NH Hotel Timisoara. 
 

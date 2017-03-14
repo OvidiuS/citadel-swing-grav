@@ -6,7 +6,7 @@ Before being event organizers and West Coast Swing promoters, we were (and still
 
 So what is this Marketplace about?
 
-Dancers
+###Dancers
 First of all, it's about you, the dancer! If you want to get that new pair of shoes or cool shirts and accessories, you will have the chance to browse through the available items.
 
 ### Creators
