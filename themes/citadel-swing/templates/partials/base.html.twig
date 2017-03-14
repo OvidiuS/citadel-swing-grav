@@ -14,6 +14,15 @@
     <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png') }}" />
     <link rel="canonical" href="{{ page.url(true, true) }}" />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript" ></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Oswald:300,400,700","Montserrat:400,700"]
+            }
+        });
+    </script>
+
     {% block stylesheets %}{# do assets.addCss('http://yui.yahooapis.com/pure/0.6.0/pure-min.css', 100) #}
         {% do assets.addCss('theme://css/normalize.css', 100) %}
         {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', 99) %}
@@ -28,7 +37,6 @@
     {{ assets.css() }}
 
     {% block javascripts %}
-        {% do assets.addJs('https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js', 101) %}
         {% do assets.addJs('theme://js/modernizr.js', 100) %}
         {% do assets.addJs('https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js', 99) %}
         {% do assets.addJs('//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js', 98) %}
@@ -38,13 +46,7 @@
     {% endblock %}
     {{ assets.js() }}
 
-	<script>
-		WebFont.load({
-			google: {
-				families: ["Oswald:300,400,700","Montserrat:400,700"]
-			}
-		});
-	</script>
+	
 
 {% endblock head%}
 </head>
