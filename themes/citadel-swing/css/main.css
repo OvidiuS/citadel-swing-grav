@@ -119,6 +119,8 @@ label.checkboxLabel {
     .main-menu-item.float:hover {
       background-color: transparent;
       color: #ffb8b8; }
+    .main-menu-item.float:focus {
+      color: #fff; }
     .main-menu-item.float.w--current {
       border-bottom: 3px none #fff;
       border-top: 3px solid #fff; }
@@ -569,7 +571,7 @@ html .w-mod-js * [data-ix='hide-scroll-nav'] {
   background-color: #d90246;
   border-bottom: 3px solid #e6e6e6;
   color: #fff;
-  padding: 1.5em 1em 0;
+  padding: 1.5em;
   text-align: center; }
   .footerSection p {
     margin-bottom: 0; }

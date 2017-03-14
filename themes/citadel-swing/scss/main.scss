@@ -214,6 +214,10 @@ label {
       color: $color-sundown;
     }
 
+    &:focus {
+      color: $color-white;
+    }
+
     &.w--current {
       border-bottom: 3px none $background-color;
       border-top: 3px solid $background-color;
@@ -836,7 +840,7 @@ html {
   background-color: $primary-color;
   border-bottom: 3px solid $color-mercury;
   color: $background-color;
-  padding: 1.5em 1em 0;
+  padding: 1.5em;
   text-align: center;
 
   p {
