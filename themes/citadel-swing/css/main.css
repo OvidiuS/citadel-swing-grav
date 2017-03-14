@@ -949,3 +949,6 @@ html .w-mod-js * [data-ix='hide-scroll-nav'] {
     margin-bottom: 0;
     padding-top: 7px;
     text-align: left; } }
+
+.jnjDetails {
+  display: none; }

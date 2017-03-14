@@ -78,14 +78,31 @@ $( document ).ready(function() {
 		partyPassOwnerField.val(fullPassOwnerField.val());
 		$('#wrkshpFormSubmit').prop( "disabled", false );
 	});
+
 	// copy the Owner field to the Styling workshop 2:owner field
 	$("input#visibleOwnerField").blur( function() {
 		$("input.inVisibleOwnerField").val($(this).val());
 	});
+
 	$('#visibleRoleSelect').on('change', function() {
 		console.log($('#visibleRoleSelect')[0].selectedIndex);
 		$("select#inVisibleRoleSelect").prop('selectedIndex', $('#visibleRoleSelect')[0].selectedIndex);
 		//$("input.inVisibleRoleField").val(this.value);
+	});
+
+	// toggle visibility of jnj options if jnj checkbox is checked
+	$('.jnjOption').click(function(){
+		var jnjDetailFields = $(this).parents('.row').siblings('.jnjDetails');
+		jnjDetailFields.toggle();
+		var selectFields = jnjDetailFields.find('select');
+		selectFields.each(function(index){
+			if ($(this).prop('required')) {
+            $(this).prop('required', false);
+        } else {
+            $(this).prop('required', true);
+        }
+		});
+		
 	});
 });
 
@@ -100,6 +117,7 @@ FC.onLoad = function () {
 			//console.log('bu!');
 
 			$("form#fcform")[0].reset();
+			$('.jnjDetails').hide();
 			if (!$.isEmptyObject(FC.json.items)) {
 				$('#fcFormTitle').html('You<span data-fc-id="minicart-quantity">0</span> have '+FC.json.items.length+' tickets in your <a href="https://citadelswing.foxycart.com/cart?cart=view">cart</a>! Add more? :)');
 			}
