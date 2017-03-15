@@ -28,3 +28,4 @@ redirects:
   /marketplace: /info/marketplace
 blog:
   route: /blog
+jnjRegisterEnd: 'Saturday, 14:55'

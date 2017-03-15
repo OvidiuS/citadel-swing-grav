@@ -9,7 +9,29 @@ form:
             underline: true
             
             fields:
+                workshopsStart:
+                    type: text
+                    label: 'Workshop Start Time (day and hour)'
+                    placeholder: 'Saturday, 13:45'
                 jnjRegisterEnd:
                     type: text
-                    label: JnJ Registration End Time             
+                    label: 'JnJ Registration End Time (day and hour)'
+                    placeholder: 'Saturday, 13:45'
+                jnjCompetitionStart:
+                    type: text
+                    label: 'JnJ Competition Start Time (day and hour)'
+                    placeholder: 'Saturday, 13:45'
+                themedCompetitionStart:
+                    type: text
+                    label: 'Themed Competition Start Time (day and hour)'
+                    placeholder: 'Saturday, 13:45'
+                marketplaceStart:
+                    type: text
+                    label: 'Marketplace Start Time (day and hour)'
+                    placeholder: 'Saturday, 13:45'
+                marketplaceEnd:
+                    type: text
+                    label: 'Marketplace End Time (hour)'
+                    placeholder: '13:45'
+
         
