@@ -9,33 +9,37 @@ form:
             underline: true
             
             fields:
-                workshopsStart:
+                workshops-start:
                     type: text
                     label: 'Workshop Start Time (day and hour)'
                     placeholder: 'Saturday, 13:45'
-                jnjRegisterEnd:
+                jnj-registration-close:
                     type: text
                     label: 'JnJ Registration End Time (day and hour)'
                     placeholder: 'Saturday, 13:45'
-                jnjCompetitionStart:
+                jnj-competition-start:
                     type: text
                     label: 'JnJ Competition Start Time (day and hour)'
                     placeholder: 'Saturday, 13:45'
-                jnjCompetitionLevels:
+                jnj-levels-list:
                     type: text
                     label: 'JnJ Competition Levels'
                     placeholder: 'Newcomer, Novice, Intermediate and Advanced'
-                themedCompetitionStart:
+                themed-competition-start:
                     type: text
                     label: 'Themed Competition Start Time (day and hour)'
                     placeholder: 'Saturday, 13:45'
-                marketplaceStart:
+                marketplace-open:
                     type: text
                     label: 'Marketplace Start Time (day and hour)'
                     placeholder: 'Saturday, 13:45'
-                marketplaceEnd:
+                marketplace-close:
                     type: text
                     label: 'Marketplace End Time (hour)'
                     placeholder: '13:45'
+                marketplace-partners-list:
+                    type: text
+                    label: 'Marketplace Partners List'
+                    placeholder: 'to be announced'
 
         

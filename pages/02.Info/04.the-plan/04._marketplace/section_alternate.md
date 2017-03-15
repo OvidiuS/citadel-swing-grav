@@ -15,6 +15,6 @@ Second of all, it's about you, the creative soul! If you personalize or distribu
 ### Manufacturers
 And last but not least, it's about them, our local manufacturers & partners. They all make our lives as dancers much easier and we feel that it is our responsibility to help them get to know you and your needs. Below you can find a list of partners who already confirmed their attendance to the Citadel Swing Marketplace. Please check back often, as this list will get updated as soon as others will confirm.
 
-The Marketplace will be held on Sunday from 17:30 until 20:30. See you there!
+The Marketplace will be held on [site-config field="marketplace-open"] until [site-config field="marketplace-close"]. See you there!
 
-Partners: to be announced.
+Partners: [site-config field="marketplace-partners-list"].

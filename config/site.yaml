@@ -28,9 +28,12 @@ redirects:
   /marketplace: /info/marketplace
 blog:
   route: /blog
-jnjRegisterEnd: 'Saturday, 14:55'
-workshopsStart: 'Friday at 17:00'
-jnjCompetitionStart: 'Saturday, 16:15'
-themedCompetitionStart: 'Friday night at 22:00'
-marketplaceStart: 'Sunday from 17:30'
-marketplaceEnd: '20:30'
+jnj-registration-close: 'Saturday, 14:55'
+workshops-start: 'Friday at 17:00'
+jnj-competition-start: 'Saturday, 16:15'
+themed-competition-start: 'Friday night at 22:00'
+marketplace-open: 'Sunday from 17:30'
+marketplace-close: '20:30'
+marketplace-partners-list: 'to be announced'
+jnj-levels-list: 'Newcomer, Novice, Intermediate and Advanced'
+
