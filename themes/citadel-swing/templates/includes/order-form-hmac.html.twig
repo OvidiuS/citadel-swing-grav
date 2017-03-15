@@ -110,56 +110,7 @@
                     </div>
                     <!-- /.row -->
 
-                    <div class="row jnjToggle">
-                      <input type="hidden" name="4:{{ hmac('owner', '--OPEN--', 'CS17JNJ') }}" class="inVisibleOwnerField" value=""/>
-                      
-                      <input type="hidden" disabled name="4:{{ hmac('name', 'JnJ Competition', 'CS17JNJ') }}" value="JnJ Competition" />
-                      <input type="hidden" disabled name="4:{{ hmac('price', '10', 'CS17JNJ') }}" value="10" />
-                      <input type="hidden" disabled name="4:{{ hmac('code', 'CS17JNJ', 'CS17JNJ') }}" value="CS17JNJ" />
-
-                      <div class="col-xs-3">
-                        <input type="hidden" name="4:{{ hmac('quantity', '0', 'CS17JNJ') }}" value="0"/>
-                        <input type="checkbox" name="4:{{ hmac('quantity', '1', 'CS17JNJ') }}" value="1" class="pull-right jnjOption"/>
-                      </div>
-                      <div class="col-xs-9">
-                        <h4>Jack&amp;Jill Competition (EUR 35)</h4>
-                        <p>Get WSDC Points</p>
-                      </div>
-                    </div>
-                    <!-- /.row -->
-
-                    <div class="form-group row jnjDetails">
-                      <label class="col-md-4 control-label">JnJ Role</label>
-                        <div class="col-md-4 selectContainer">
-                          <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                            <select name="4:role" disabled class="form-control input-lg selectpicker"  data-required-error="Please select a role." id="visibleRoleSelect" disabled>
-                              <option value="" default>please select</option>
-                              <option value="{{ hmac('role', 'leader{c+-RL}', 'CS17JNJ', '', true) }}">Leader</option>
-                              <option value="{{ hmac('role', 'follower{c+-RF}', 'CS17JNJ', '', true) }}">Follower</option>
-                            </select>
-                          </div>
-                        </div>
-                      <div class="col-md-4 help-block with-errors"></div>
-                    </div>
-
-                    <div class="form-group row jnjDetails">
-                      <label class="col-md-4 control-label">JnJ Level</label>
-                        <div class="col-md-4 selectContainer">
-                          <div class="input-group">
-                              <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                              <select name="4:level" disabled class="form-control input-lg selectpicker"  data-required-error="Please select a level.">
-                                <option value="" default>please select</option>
-                                <option value="{{ hmac('level', 'Newcomer{c+-NEW}', 'CS17JNJ', '', true) }}">Newcomer</option>
-                                <option value="{{ hmac('level', 'Novice{c+-NOV}', 'CS17JNJ', '', true) }}">Novice</option>
-                                <option value="{{ hmac('level', 'Intermediate{c+-INT}', 'CS17JNJ', '', true) }}">Intermediate</option>
-                                <option value="{{ hmac('level', 'Advanced{c+-ADV}', 'CS17JNJ', '', true) }}">Advanced</option>
-                            </select>
-                          </div>
-                        </div>
-                      <div class="col-md-4 help-block with-errors"></div>
-                    </div>
-
+                    {% include 'includes/order-form-jnj.html.twig' %}
 
                 </div>
                 <!-- /.row -->
@@ -192,55 +143,7 @@
                 </div>
                 <!-- /.row -->
 
-                <div class="row jnjToggle">
-                  <input type="hidden" name="5:{{ hmac('owner', '--OPEN--', 'CS17JNJ') }}" class="inVisibleOwnerField" value=""/>
-                  
-                  <input type="hidden" disabled name="5:{{ hmac('name', 'JnJ Competition', 'CS17JNJ') }}" value="JnJ Competition" />
-                  <input type="hidden" disabled name="5:{{ hmac('price', '10', 'CS17JNJ') }}" value="10" />
-                  <input type="hidden" disabled name="5:{{ hmac('code', 'CS17JNJ', 'CS17JNJ') }}" value="CS17JNJ" />
-
-                  <div class="col-xs-3">
-                    <input type="hidden" name="5:{{ hmac('quantity', '0', 'CS17JNJ') }}" value="0"/>
-                    <input type="checkbox" name="5:{{ hmac('quantity', '1', 'CS17JNJ') }}" value="1" class="pull-right jnjOption"/>
-                  </div>
-                  <div class="col-xs-9">
-                    <h4>Jack&amp;Jill Competition (EUR 35)</h4>
-                    <p>Get WSDC Points</p>
-                  </div>
-                </div>
-                <!-- /.row -->
-
-                <div class="form-group row jnjDetails">
-                  <label class="col-md-4 control-label">JnJ Role</label>
-                    <div class="col-md-4 selectContainer">
-                      <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                        <select name="5:role" disabled class="form-control input-lg selectpicker"  data-required-error="Please select a role." id="visibleRoleSelect" disabled>
-                          <option value="" default>please select</option>
-                          <option value="{{ hmac('role', 'leader{c+-RL}', 'CS17JNJ', '', true) }}">Leader</option>
-                              <option value="{{ hmac('role', 'follower{c+-RF}', 'CS17JNJ', '', true) }}">Follower</option>>
-                        </select>
-                      </div>
-                    </div>
-                  <div class="col-md-4 help-block with-errors"></div>
-                </div>
-
-                <div class="form-group row jnjDetails">
-                  <label class="col-md-4 control-label">JnJ Level</label>
-                    <div class="col-md-4 selectContainer">
-                      <div class="input-group">
-                          <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                          <select name="5:level" disabled class="form-control input-lg selectpicker"  data-required-error="Please select a level.">
-                            <option value="" default>please select</option>
-                            <option value="{{ hmac('level', 'Newcomer{c+-NEW}', 'CS17JNJ', '', true) }}">Newcomer</option>
-                            <option value="{{ hmac('level', 'Novice{c+-NOV}', 'CS17JNJ', '', true) }}">Novice</option>
-                            <option value="{{ hmac('level', 'Intermediate{c+-INT}', 'CS17JNJ', '', true) }}">Intermediate</option>
-                            <option value="{{ hmac('level', 'Advanced{c+-ADV}', 'CS17JNJ', '', true) }}">Advanced</option>
-                        </select>
-                      </div>
-                    </div>
-                  <div class="col-md-4 help-block with-errors"></div>
-                </div>
+                {% include 'includes/order-form-jnj.html.twig' %}
 
               </div>
               <!-- /.panel-body -->
