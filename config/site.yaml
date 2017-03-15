@@ -8,6 +8,13 @@ taxonomies:
   - tag
 metadata:
   description: 'WSDC Registry International West Coast Swing Event - 22-24 September 2017 - Timisoara, Romania.'
+  referrer: always
+  robots: all
+  'og:type': website
+  'og:locale': en_us
+  'og:site_name': 'Citadel Swing 2017'
+  'og:see_also': 'https://www.facebook.com/CitadelSwing'
+  'og:image': /citadel-swing-2017-fb.jpg
 summary:
   enabled: true
   format: short
