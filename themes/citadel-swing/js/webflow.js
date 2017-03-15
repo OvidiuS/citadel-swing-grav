@@ -80,7 +80,7 @@ $( document ).ready(function() {
 	});
 
 	// copy the Owner field to the Styling workshop 2:owner field
-	$("input#visibleOwnerField").blur( function() {
+	$("input#visibleOwnerField,input#partyPassOwnerField").blur( function() {
 		$("input.inVisibleOwnerField").val($(this).val());
 	});
 
