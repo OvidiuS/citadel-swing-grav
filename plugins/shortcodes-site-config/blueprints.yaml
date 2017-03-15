@@ -1,0 +1,34 @@
+name: Shortcodes Site Config
+version: 0.1.0
+description: Shortcodes to output Site Config Fields
+icon: plug
+author:
+  name: Ovi Savescu
+  email: savescu.ovidiu@gmail.com
+homepage: https://github.com/-160977/grav-plugin-cs-shortcodes
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/-160977/grav-plugin-cs-shortcodes/issues
+docs: https://github.com/-160977/grav-plugin-cs-shortcodes/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - shortcode-core
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+    text_var:
+      type: text
+      label: Text Variable
+      help: Text to add to the top of a page
