@@ -21,6 +21,10 @@ form:
                     type: text
                     label: 'JnJ Competition Start Time (day and hour)'
                     placeholder: 'Saturday, 13:45'
+                jnjCompetitionLevels:
+                    type: text
+                    label: 'JnJ Competition Levels'
+                    placeholder: 'Newcomer, Novice, Intermediate and Advanced'
                 themedCompetitionStart:
                     type: text
                     label: 'Themed Competition Start Time (day and hour)'
