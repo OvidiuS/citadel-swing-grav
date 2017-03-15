@@ -1,0 +1,268 @@
+<form class="well form-horizontal" data-disable="false" action="https://citadelswing.foxycart.com/cart" method="post"  id="fcform" data-toggle="validator">
+<fieldset>
+<!-- Form Name -->
+<!-- <legend>Workshop Passes</legend> -->
+
+<h3 class="redBg formSectionHeader">Owner Info</h3>
+      <p>PLEASE NOTE: You will be able to buy tickets for multiple people in one transaction, but you need to add them to the cart for one person at a time.</p>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Ticket Holder Name</label>
+  <div class="col-md-6 inputGroupContainer">
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input name="{{ hmac('owner', '--OPEN--', 'CS17FP-ERL') }}" placeholder="Full Name" class="form-control input-lg"  type="text" id="visibleOwnerField" required>
+      <input type="text" disabled name="3:{{ hmac('owner', '--OPEN--', 'CS17PARTY') }}" placeholder="Full Name" class="form-control input-lg inVisibleOwnerField" id="partyPassOwnerField" style="display:none;" required />
+    </div>
+  </div>
+  <div class="col-md-6 col-md-offset-4 help-block with-errors"></div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label">WSDC ID</label>
+  <div class="col-md-6 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-star-empty"></i></span>
+  <input  name="{{ hmac('WSDC', '--OPEN--', 'CS17FP-ERL') }}" placeholder="if it exists" class="form-control input-lg"  type="number">
+    </div>
+  </div>
+</div>
+
+
+    <h3 class="redBg formSectionHeader">Choose your path:</h3>
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#fullPass" id="fullPassLink">1. Full Pass (EUR 95)  - includes party pass</a>
+              </h4>
+          </div>
+          <div id="fullPass" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-3">
+                    <input type="checkbox" id="fake" class="pull-right" required checked disabled/>
+                  </div>
+                    <div class="col-md-9">
+                      <h4>Early Bird workshop Pass (EUR 95)</h4>
+                      <p>Offer Expires on April 16th</p>
+                    </div>
+                </div>
+
+                    <input type="hidden" disabled name="{{ hmac('name', 'Full Pass - Early Bird', 'CS17FP-ERL') }}" value="Full Pass - Early Bird" />
+                    <input type="hidden" disabled name="{{ hmac('price', '95', 'CS17FP-ERL') }}" value="95" />
+                    <input type="hidden" disabled name="{{ hmac('code', 'CS17FP-ERL', 'CS17FP-ERL') }}" value="CS17FP-ERL" />
+
+                    <div class="form-group row">
+                      <label class="col-md-4 control-label">Workshop Role</label>
+                        <div class="col-md-4 selectContainer">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                            <select name="role" required disabled class="form-control input-lg selectpicker"  data-required-error="Please select a role." id="visibleRoleSelect" disabled>
+                              <option value="" default>please select</option>
+                              <option value="{{ hmac('role', 'leader{c+-RL}', 'CS17FP-ERL', '', true) }}">Leader</option>
+                              <option value="{{ hmac('role', 'follower{c+-RF}', 'CS17FP-ERL', '', true) }}">Follower</option>
+                            </select>
+                          </div>
+                        </div>
+                      <div class="col-md-4 help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-md-4 control-label">Workshop Level</label>
+                        <div class="col-md-4 selectContainer">
+                          <div class="input-group">
+                              <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                              <select name="level" required disabled class="form-control input-lg selectpicker"  data-required-error="Please select a level.">
+                                <option value="" default>please select</option>
+                                <option value="{{ hmac('level', '2{c+-L2}', 'CS17FP-ERL', '', true) }}">Level 2</option>
+                                <option value="{{ hmac('level', '3{c+-L3}', 'CS17FP-ERL', '', true) }}">Level 3</option>
+                                <option value="{{ hmac('level', '4{c+-L4}', 'CS17FP-ERL', '', true) }}">Level 4</option>
+                            </select>
+                          </div>
+                        </div>
+                      <div class="col-md-4 help-block with-errors"></div>
+                    </div>
+
+                    <!-- radio checks -->
+                    <div class="row">
+                      <input type="hidden" name="2:{{ hmac('owner', '--OPEN--', 'CS17STYLE') }}" class="inVisibleOwnerField" value=""/>
+                      <input type="hidden" disabled name="2:{{ hmac('name', 'Styling Workshop', 'CS17STYLE') }}" value="Styling Workshop" />
+                      <input type="hidden" disabled name="2:{{ hmac('price', '35', 'CS17STYLE') }}" value="35" />
+                      <input type="hidden" disabled name="2:{{ hmac('code', 'CS17STYLE', 'CS17STYLE') }}" value="CS17STYLE" />
+                      <select name="2:role" disabled class="form-control input-lg selectpicker" required data-required-error="Please select a role." id="inVisibleRoleSelect" style="display:none;" disabled>
+                        <option value="" default>please select</option>
+                        <option value="{{ hmac('role', 'leader{c+-RL}', 'CS17STYLE', '', true) }}">Leader</option>
+                        <option value="{{ hmac('role', 'follower{c+-RF}', 'CS17STYLE', '', true) }}">Follower</option>
+                      </select>
+                      
+
+                      <div class="col-xs-3">
+                        <input type="hidden" name="2:{{ hmac('quantity', '0', 'CS17STYLE') }}" value="0"/>
+                        <input type="checkbox" name="2:{{ hmac('quantity', '1', 'CS17STYLE') }}" value="1" class="pull-right"/>
+                      </div>
+                      <div class="col-xs-9">
+                        <h4>Extra Styling Workshop (EUR 35)</h4>
+                        <p>Get your groove on :)</p>
+                      </div>
+                    </div>
+                    <!-- /.row -->
+
+                    <div class="row jnjToggle">
+                      <input type="hidden" name="4:{{ hmac('owner', '--OPEN--', 'CS17JNJ') }}" class="inVisibleOwnerField" value=""/>
+                      
+                      <input type="hidden" disabled name="4:{{ hmac('name', 'JnJ Competition', 'CS17JNJ') }}" value="JnJ Competition" />
+                      <input type="hidden" disabled name="4:{{ hmac('price', '10', 'CS17JNJ') }}" value="10" />
+                      <input type="hidden" disabled name="4:{{ hmac('code', 'CS17JNJ', 'CS17JNJ') }}" value="CS17JNJ" />
+
+                      <div class="col-xs-3">
+                        <input type="hidden" name="4:{{ hmac('quantity', '0', 'CS17JNJ') }}" value="0"/>
+                        <input type="checkbox" name="4:{{ hmac('quantity', '1', 'CS17JNJ') }}" value="1" class="pull-right jnjOption"/>
+                      </div>
+                      <div class="col-xs-9">
+                        <h4>Jack&amp;Jill Competition (EUR 35)</h4>
+                        <p>Get WSDC Points</p>
+                      </div>
+                    </div>
+                    <!-- /.row -->
+
+                    <div class="form-group row jnjDetails">
+                      <label class="col-md-4 control-label">JnJ Role</label>
+                        <div class="col-md-4 selectContainer">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                            <select name="4:role" disabled class="form-control input-lg selectpicker"  data-required-error="Please select a role." id="visibleRoleSelect" disabled>
+                              <option value="" default>please select</option>
+                              <option value="{{ hmac('role', 'leader{c+-RL}', 'CS17JNJ', '', true) }}">Leader</option>
+                              <option value="{{ hmac('role', 'follower{c+-RF}', 'CS17JNJ', '', true) }}">Follower</option>
+                            </select>
+                          </div>
+                        </div>
+                      <div class="col-md-4 help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group row jnjDetails">
+                      <label class="col-md-4 control-label">JnJ Level</label>
+                        <div class="col-md-4 selectContainer">
+                          <div class="input-group">
+                              <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                              <select name="4:level" disabled class="form-control input-lg selectpicker"  data-required-error="Please select a level.">
+                                <option value="" default>please select</option>
+                                <option value="{{ hmac('level', 'Newcomer{c+-NEW}', 'CS17JNJ', '', true) }}">Newcomer</option>
+                                <option value="{{ hmac('level', 'Novice{c+-NOV}', 'CS17JNJ', '', true) }}">Novice</option>
+                                <option value="{{ hmac('level', 'Intermediate{c+-INT}', 'CS17JNJ', '', true) }}">Intermediate</option>
+                                <option value="{{ hmac('level', 'Advanced{c+-ADV}', 'CS17JNJ', '', true) }}">Advanced</option>
+                            </select>
+                          </div>
+                        </div>
+                      <div class="col-md-4 help-block with-errors"></div>
+                    </div>
+
+
+                </div>
+                <!-- /.row -->
+              </div>
+          </div>
+      
+
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#partyPass" id="partyPassLink">2. Party Pass Only (EUR 80)</a>
+              </h4>
+          </div>
+          <div id="partyPass" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-3">
+                    <input type="checkbox" id="fake" class="pull-right" required checked disabled/>
+                  </div>
+                    <div class="col-md-9">
+                      <h4>Party Pass (EUR 80)</h4>
+                      <p>Three Awesome Parties await you.</p>
+                    </div>
+
+                    <input type="hidden" disabled name="3:{{ hmac('name', 'Party Pass', 'CS17PARTY') }}" value="Party Pass" />
+                    <input type="hidden" disabled name="3:{{ hmac('price', '80', 'CS17PARTY') }}" value="80" />
+                    <input type="hidden" disabled name="3:{{ hmac('code', 'CS17PARTY', 'CS17PARTY') }}" value="CS17PARTY" />
+
+
+                </div>
+                <!-- /.row -->
+
+                <div class="row jnjToggle">
+                  <input type="hidden" name="5:{{ hmac('owner', '--OPEN--', 'CS17JNJ') }}" class="inVisibleOwnerField" value=""/>
+                  
+                  <input type="hidden" disabled name="5:{{ hmac('name', 'JnJ Competition', 'CS17JNJ') }}" value="JnJ Competition" />
+                  <input type="hidden" disabled name="5:{{ hmac('price', '10', 'CS17JNJ') }}" value="10" />
+                  <input type="hidden" disabled name="5:{{ hmac('code', 'CS17JNJ', 'CS17JNJ') }}" value="CS17JNJ" />
+
+                  <div class="col-xs-3">
+                    <input type="hidden" name="5:{{ hmac('quantity', '0', 'CS17JNJ') }}" value="0"/>
+                    <input type="checkbox" name="5:{{ hmac('quantity', '1', 'CS17JNJ') }}" value="1" class="pull-right jnjOption"/>
+                  </div>
+                  <div class="col-xs-9">
+                    <h4>Jack&amp;Jill Competition (EUR 35)</h4>
+                    <p>Get WSDC Points</p>
+                  </div>
+                </div>
+                <!-- /.row -->
+
+                <div class="form-group row jnjDetails">
+                  <label class="col-md-4 control-label">JnJ Role</label>
+                    <div class="col-md-4 selectContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                        <select name="5:role" disabled class="form-control input-lg selectpicker"  data-required-error="Please select a role." id="visibleRoleSelect" disabled>
+                          <option value="" default>please select</option>
+                          <option value="{{ hmac('role', 'leader{c+-RL}', 'CS17JNJ', '', true) }}">Leader</option>
+                              <option value="{{ hmac('role', 'follower{c+-RF}', 'CS17JNJ', '', true) }}">Follower</option>>
+                        </select>
+                      </div>
+                    </div>
+                  <div class="col-md-4 help-block with-errors"></div>
+                </div>
+
+                <div class="form-group row jnjDetails">
+                  <label class="col-md-4 control-label">JnJ Level</label>
+                    <div class="col-md-4 selectContainer">
+                      <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                          <select name="5:level" disabled class="form-control input-lg selectpicker"  data-required-error="Please select a level.">
+                            <option value="" default>please select</option>
+                            <option value="{{ hmac('level', 'Newcomer{c+-NEW}', 'CS17JNJ', '', true) }}">Newcomer</option>
+                            <option value="{{ hmac('level', 'Novice{c+-NOV}', 'CS17JNJ', '', true) }}">Novice</option>
+                            <option value="{{ hmac('level', 'Intermediate{c+-INT}', 'CS17JNJ', '', true) }}">Intermediate</option>
+                            <option value="{{ hmac('level', 'Advanced{c+-ADV}', 'CS17JNJ', '', true) }}">Advanced</option>
+                        </select>
+                      </div>
+                    </div>
+                  <div class="col-md-4 help-block with-errors"></div>
+                </div>
+
+              </div>
+              <!-- /.panel-body -->
+          </div>
+          <!-- /.panel-collapse -->
+      </div>
+      <!-- /.panel -->
+    </div>
+    <!-- /.panel-group -->
+
+
+
+<!-- Success message -->
+<!-- <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div> -->
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+    <button type="submit" disabled class="btn btn-lg btn-danger" id="wrkshpFormSubmit">Add Tickets to Cart <span class="glyphicon glyphicon-chevron-right"></span></button>
+  </div>
+</div>
+
+</fieldset>
+</form>

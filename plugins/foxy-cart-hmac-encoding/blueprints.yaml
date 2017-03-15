@@ -1,0 +1,31 @@
+name: Foxy Cart Hmac Encoding
+version: 0.1.0
+description: Provides a twig filter to encode form fields for a FoxyCart Form.
+icon: plug
+author:
+  name: Ovi Savescu
+  email: savescu.ovidiu@gmail.com
+homepage: https://github.com/160977/grav-plugin-foxy-cart-hmac-encoding
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/160977/grav-plugin-foxy-cart-hmac-encoding/issues
+docs: https://github.com/160977/grav-plugin-foxy-cart-hmac-encoding/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+    api_key:
+      type: text
+      label: 'FoxyCart API Key'
+      help: 'Paste your FoxyCart API Key here (found in store settings -> advanced'
