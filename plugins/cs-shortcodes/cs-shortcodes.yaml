@@ -1,0 +1,4 @@
+enabled: true
+text_var: Custom Text added by the **Cs Shortcodes** plugin (disable plugin to remove)
+theme:
+  tabs: default
