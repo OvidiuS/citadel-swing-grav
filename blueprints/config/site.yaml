@@ -1,0 +1,15 @@
+@extends:
+    '@parent'
+
+form:
+    fields:
+        citadelSwing:
+            type: section
+            title: Citadel Swing Site-Wide Content Settings
+            underline: true
+            
+            fields:
+                jnjRegisterEnd:
+                    type: text
+                    label: JnJ Registration End Time             
+        
