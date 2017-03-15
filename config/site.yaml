@@ -13,5 +13,11 @@ summary:
   format: short
   size: 300
   delimiter: '==='
+redirects:
+  /schedule: /info/schedule
+  /faqs: /info/faqs
+  /the-plan: /info/the-plan
+  /prices: /info/prices
+  /marketplace: /info/marketplace
 blog:
   route: /blog
