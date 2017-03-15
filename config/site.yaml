@@ -29,3 +29,8 @@ redirects:
 blog:
   route: /blog
 jnjRegisterEnd: 'Saturday, 14:55'
+workshopsStart: 'Friday at 17:00'
+jnjCompetitionStart: 'Saturday, 16:15'
+themedCompetitionStart: 'Friday night at 22:00'
+marketplaceStart: 'Sunday from 17:30'
+marketplaceEnd: '20:30'
