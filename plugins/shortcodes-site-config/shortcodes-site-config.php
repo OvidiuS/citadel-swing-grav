@@ -8,7 +8,7 @@ use RocketTheme\Toolbox\Event\Event;
  * Class CsShortcodesPlugin
  * @package Grav\Plugin
  */
-class CsShortcodesPlugin extends Plugin
+class ShortcodesSiteConfigPlugin extends Plugin
 {
     /**
      * @return array

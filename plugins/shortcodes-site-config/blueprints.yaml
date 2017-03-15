@@ -1,6 +1,6 @@
-name: Cs Shortcodes
+name: Shortcodes Site Config
 version: 0.1.0
-description: Shortcodes for the Citadel Swing Website
+description: Shortcodes to output Site Config Fields
 icon: plug
 author:
   name: Ovi Savescu
