@@ -23,41 +23,32 @@ class CsShortcodesPlugin extends Plugin
     public static function getSubscribedEvents()
     {
         return [
-            'onPluginsInitialized' => ['onPluginsInitialized', 0]
+            'onShortcodeHandlers' => ['onShortcodeHandlers', 0],
+            'onTwigExtensions' => ['onTwigExtensions', 0],
+            'onTwigTemplatePaths' => ['onTwigTemplatePaths', 0],
         ];
     }
 
     /**
-     * Initialize the plugin
+     * Add current directory to twig lookup paths.
      */
-    public function onPluginsInitialized()
+    public function onTwigTemplatePaths()
     {
-        // Don't proceed if we are in the admin plugin
-        if ($this->isAdmin()) {
-            return;
-        }
-
-        // Enable the main event we are interested in
-        $this->enable([
-            'onPageContentRaw' => ['onPageContentRaw', 0]
-        ]);
+        $this->grav['twig']->twig_paths[] = __DIR__ . '/templates';
     }
 
-    /**
-     * Do some work for this event, full details of events can be found
-     * on the learn site: http://learn.getgrav.org/plugins/event-hooks
-     *
-     * @param Event $e
-     */
-    public function onPageContentRaw(Event $e)
+
+
+   public function onTwigExtensions()
     {
-        // Get a variable from the plugin configuration
-        $text = $this->grav['config']->get('plugins.cs-shortcodes.text_var');
-
-        // Get the current raw content
-        $content = $e['page']->getRawContent();
-
-        // Prepend the output with the custom text and set back on the page
-        $e['page']->setRawContent($text . "\n\n" . $content);
+        require_once(__DIR__ . '/twig/ShortcodeUITwigExtension.php');
+        $this->grav['twig']->twig->addExtension(new ShortcodeUiTwigExtension());
+    }
+    /**
+     * Initialize configuration
+     */
+    public function onShortcodeHandlers()
+    {
+        $this->grav['shortcode']->registerAllShortcodes(__DIR__.'/shortcodes');
     }
 }
