@@ -15,6 +15,7 @@
       <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
       <input name="{{ hmac('owner', '--OPEN--', 'CS17FP-ERL') }}" placeholder="Full Name" class="form-control input-lg"  type="text" id="visibleOwnerField" required>
       <input type="text" disabled name="3:{{ hmac('owner', '--OPEN--', 'CS17PARTY') }}" placeholder="Full Name" class="form-control input-lg inVisibleOwnerField" id="partyPassOwnerField" style="display:none;" required />
+      <input type="hidden" name="coupon" value="CS17Party20" />
     </div>
   </div>
   <div class="col-md-6 col-md-offset-4 help-block with-errors"></div>
@@ -55,6 +56,7 @@
                     <input type="hidden" disabled name="{{ hmac('name', 'Full Pass - Early Bird', 'CS17FP-ERL') }}" value="Full Pass - Early Bird" />
                     <input type="hidden" disabled name="{{ hmac('price', '95', 'CS17FP-ERL') }}" value="95" />
                     <input type="hidden" disabled name="{{ hmac('code', 'CS17FP-ERL', 'CS17FP-ERL') }}" value="CS17FP-ERL" />
+                    <input type="hidden" disabled name="{{ hmac('category', 'Passes', 'CS17FP-ERL') }}" value="Passes" />
 
                     <div class="form-group row">
                       <label class="col-md-4 control-label">Workshop Role</label>
@@ -141,6 +143,7 @@
                     <input type="hidden" disabled name="3:{{ hmac('name', 'Party Pass', 'CS17PARTY') }}" value="Party Pass" />
                     <input type="hidden" disabled name="3:{{ hmac('price', '80', 'CS17PARTY') }}" value="80" />
                     <input type="hidden" disabled name="3:{{ hmac('code', 'CS17PARTY', 'CS17PARTY') }}" value="CS17PARTY" />
+                    <input type="hidden" disabled name="3:{{ hmac('category', 'Passes', 'CS17PARTY') }}" value="Passes" />
 
 
                 </div>
