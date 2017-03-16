@@ -106,39 +106,34 @@ $( document ).ready(function() {
 	});
 });
 
-
-
+// FoxyCart Custom actions
 var FC = FC || {};
 FC.onLoad = function () {
 	FC.client.on('ready.done', function () {
 		$('#minicart').show();
 
+		// when closing the side-cart
 		FC.client.on('sidecart-hide', function(params) {
-			//console.log('bu!');
 
-			$("form#fcform")[0].reset();
-			$('.jnjDetails').hide();
-			if (!$.isEmptyObject(FC.json.items)) {
+			$("form#fcform")[0].reset(); // reset the ticket form
+			$('.jnjDetails').hide(); // collapse any previously revealed fields
+			if (!$.isEmptyObject(FC.json.items)) { // update the minicart display with the cart contents
 				$('#fcFormTitle').html('You<span data-fc-id="minicart-quantity">0</span> have '+FC.json.items.length+' tickets in your <a href="https://citadelswing.foxycart.com/cart?cart=view">cart</a>! Add more? :)');
 			}
 			return true;
 		});
 
 
-
 		FC.client.on('cart-submit', function(params, next) {
         $element = $(params.element);
-				if ($element.attr('id') == 'fcform') { // this prevents errors when opening the minicart because it triggers the same cart-submit event as adding a product
-					if (formCheck) {
+				if ($element.attr('id') == 'fcform') { // this prevents errors when opening the minicart because it triggers the same cart-submit event as adding a product, so it checks that some tickets have really been added, and it's not just someone looking at the cart contents
+					if (formCheck) { // the formCheck event gets fired byt the form validation library after validating the form. true if validation succeeded, false otherwise
 						//console.log('proceedingn with sidecart');
 						next();
 					}
-        }else{
+        }else{// if it's someone just looking at the side-cart
 					next();
 				}
-				//console.log('bu');
-				//console.log(formCheck);
-				//$('form#fcform').validator('validate');
 
 		});
 
