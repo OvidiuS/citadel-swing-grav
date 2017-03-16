@@ -1,0 +1,17 @@
+<div class="row tourToggle">
+                      <input type="hidden" name="5:{{ hmac('owner', '--OPEN--', 'CS17TOUR') }}" class="inVisibleOwnerField" value=""/>
+                      
+                      <input type="hidden" disabled name="5:{{ hmac('name', 'Guided Tour', 'CS17TOUR') }}" value="Guided Tour" />
+                      <input type="hidden" disabled name="5:{{ hmac('price', '0', 'CS17TOUR') }}" value="0" />
+                      <input type="hidden" disabled name="5:{{ hmac('code', 'CS17TOUR', 'CS17TOUR') }}" value="CS17TOUR" />
+
+                      <div class="col-xs-3">
+                        <input type="hidden" name="5:{{ hmac('quantity', '0', 'CS17TOUR') }}" value="0"/>
+                        <input type="checkbox" name="5:{{ hmac('quantity', '1', 'CS17TOUR') }}" value="1" class="pull-right tourOption"/>
+                      </div>
+                      <div class="col-xs-9">
+                        <h4>I would like to participate in the <a href="/info/faqs#top_questions" target="_blank">City Tour</a> </h4>
+                        <p><a href="/info/faqs#top_questions" target="_blank">One Hour City Tour</a> with the best local tour guide. EUR 5, payable on the spot to the tour guide.</p>
+                      </div>
+                    </div>
+                    <!-- /.row -->
