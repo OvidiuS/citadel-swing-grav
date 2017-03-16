@@ -120,7 +120,25 @@ $( document ).ready(function() {
 		});
 		
 	});
+
+	// toggle visibility of tour options if tour checkbox is checked
+	$('.tourOption').click(function(){
+		console.log('click');
+		var tourDetailFields = $(this).parents('.row').siblings('.tourDetails');
+		tourDetailFields.toggle();
+		var selectFields = tourDetailFields.find('select');
+		selectFields.each(function(index){
+			if ($(this).prop('required')) {
+            $(this).prop('required', false);
+        } else {
+            $(this).prop('required', true);
+        }
+		});
+		
+	});
 });
+
+
 
 // FoxyCart Custom actions
 var FC = FC || {};
@@ -132,7 +150,7 @@ FC.onLoad = function () {
 		FC.client.on('sidecart-hide', function(params) {
 
 			$("form#fcform")[0].reset(); // reset the ticket form
-			$('.jnjDetails').hide(); // collapse any previously revealed fields
+			$('.jnjDetails, .tourDetails').hide(); // collapse any previously revealed fields
 			if (!$.isEmptyObject(FC.json.items)) { // update the minicart display with the cart contents
 				$('#fcFormTitle').html('You<span data-fc-id="minicart-quantity">0</span> have '+FC.json.items.length+' tickets in your <a href="https://citadelswing.foxycart.com/cart?cart=view">cart</a>! Add more? :)');
 			}

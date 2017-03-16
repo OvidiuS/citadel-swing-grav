@@ -15,3 +15,18 @@
                       </div>
                     </div>
                     <!-- /.row -->
+
+                    <div class="form-group row tourDetails" style="display:none;">
+                      <label class="col-md-4 control-label">Tour Date</label>
+                        <div class="col-md-4 selectContainer">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                            <select name="5:date" disabled class="form-control input-lg selectpicker"  data-required-error="Please select a date." disabled>
+                              <option value="" default>please select</option>
+                              <option value="{{ hmac('date', 'Friday{c+-FRI}', 'CS17TOUR', '', true) }}">Friday</option>
+                              <option value="{{ hmac('date', 'Monday{c+-MON}', 'CS17TOUR', '', true) }}">Monday</option>
+                            </select>
+                          </div>
+                        </div>
+                      <div class="col-md-4 help-block with-errors"></div>
+                    </div>
