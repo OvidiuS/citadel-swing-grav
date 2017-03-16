@@ -15,4 +15,4 @@ You can find more info on the room on [the hotel's website](https://www.nh-hotel
 
 ### How to take advantage of this offer
 
-After [purchasing your event tickets](/buy-tickets), you will receive instructions in your confirmation email on how to take advantage of the special price we've negotiated for you with the Hotel NH Timisoara.
+After [purchasing your event tickets](/buy-tickets), you will receive instructions in your confirmation email on how to take advantage of the special price we've negotiated for you with Hotel NH Timisoara.

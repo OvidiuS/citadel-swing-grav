@@ -25,6 +25,10 @@ form:
                     type: text
                     label: 'JnJ Competition Levels'
                     placeholder: 'Newcomer, Novice, Intermediate and Advanced'
+                jnj-levels-number:
+                    type: text
+                    label: 'Number of JnJ levels listed above'
+                    placeholder: '4'
                 themed-competition-start:
                     type: text
                     label: 'Themed Competition Start Time (day and hour)'

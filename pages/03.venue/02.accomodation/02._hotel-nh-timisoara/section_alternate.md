@@ -9,8 +9,8 @@ Hotel NH Timisoara enjoys a great location in a peaceful area opposite the Peopl
 * peaceful, pretty area near the university
 * 15-minute walk from the center of town
 
-The hotel has 83 guestrooms, which are spacious, light and stylishly decorated in warm, natural colors. Rooms are equipped with desks and chairs for working, while Wi-Fi, satellite TV and air con all come as standard. And if you’re looking for extra space, we have 3 Junior Suites with separate sitting areas and great views.
-* high-speed Wi-Fi connection
+The hotel has 83 guest-rooms, which are spacious, light and stylishly decorated in warm, natural colors. Rooms are equipped with desks and chairs for working, while Wi-Fi, satellite TV and air con all come as standard. And if you’re looking for extra space, we have 3 Junior Suites with separate sitting areas and great views.
+* high-speed WiFi connection
 * accessible rooms are available
 * half of our rooms enjoy park views
 
@@ -18,4 +18,3 @@ We have a bright, spacious and modern bar-restaurant that serves both local and 
 * bikes available for rent
 * beautiful summer terrace
 * spa with gym, sauna and Turkish bath
-* If you're staying with us over the weekend take advantage of "Lazy Sunday", and checkout late (before 5pm) free of charge.

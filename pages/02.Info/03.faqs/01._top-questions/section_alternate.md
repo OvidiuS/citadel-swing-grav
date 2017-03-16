@@ -10,6 +10,6 @@ Those who would like to participate, please mark the corresponding field in the 
 
 ### What's with the Knight with Shining Armour Themed Competition?
 
-On Friday night at 22:00 everybody will participate in this really fun competition. 
+On [site-config field="themed-competition-start"] everybody will participate in this really fun competition. 
 
 The rules will be announced on the spot. Keep that tension rising ... >:)

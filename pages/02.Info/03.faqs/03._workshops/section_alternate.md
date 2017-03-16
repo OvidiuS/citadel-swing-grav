@@ -4,7 +4,7 @@ title: Workshops
 
 ### How will the Workshop Auditions work?
 
-Your workshops start on Friday at 21:00 with the Auditions.
+Your workshops start on [site-config field="workshops-start"] with the Auditions.
 
 You will get 3 songs to dance on. You will rotate before each song. This will help us ensure that you picked the right level for you, so you can get the most out of this Event. 
 
