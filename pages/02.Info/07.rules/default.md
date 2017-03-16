@@ -8,7 +8,7 @@ title: Rules
 Participants have to wear the wristband at all times. It is mandatory to show the wristband at the entry of classes and parties.
 
 ### Items and valuables
-The organizes does not take any responsibility for participants’ valuables and assets.
+The organizes do not take any responsibility for participants’ valuables and assets.
 
 We have cloakrooms where you can change. Makes sure to take your items with you when you are leaving for the classes.
 
@@ -17,7 +17,7 @@ The organizers will keep lost & found properties for one week after the event ha
 ### Physical Injury
 There is a risk of physical injuries during dance activities. It is the participant's responsibility and decision to do any dance activity during the event. Do your best to be careful – for yourself and for the others as well!
 
-The organizers does not take any responsibility for participants’ physical injuries.
+The organizers do not take any responsibility for participants’ physical injuries.
 
 ### Decisions
 Participants have to accept the decisions of the teachers and organizers during the event and especially during audition.
@@ -26,7 +26,7 @@ Participants have to accept the decisions of the teachers and organizers during 
 Participants (their image, voice) may appear in media (like photo, video, event DVD) that the organizers or representative will record during the event. The organizers can use these media files for any purpose related to Citadel Swing or other artistic purposes in any form. Participants agree that these media files are the sole property of the organizers.
 
 ### Refund
-There is no refund in case some part of the program is not realized (for example a teacher is not participating because of illness or cancelled flights).
+There is no refund in case some part of the program is not realized (for example a teacher is not participating because of illness or canceled flights).
 
 ### Recording
 Participants are not allowed to record or take photos of classes, unless the teacher permits it.

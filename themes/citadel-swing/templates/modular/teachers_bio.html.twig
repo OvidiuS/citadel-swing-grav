@@ -2,6 +2,9 @@
 
   {% block sectionContent %}
     <h2>{{ header.title }}</h2>
+      <div class="teachersVideo">
+      {{ vimeo_embed_video( header.teachers_video_vimeo_id, div=true ) }}
+      </div>
       <img src="{{ page.url }}/{{ header.teachers_image }}" alt="{{ header.title}}" class="invitee-image rte">
     {{ content }}
   {% endblock %}

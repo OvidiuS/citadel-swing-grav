@@ -5,6 +5,7 @@ leader_name: 'Jakub Jakoubek'
 leader_country: CZ
 follower_name: 'Emeline Rochefeuille'
 follower_country: FR
+teachers_video_vimeo_id: '203213636'
 ---
 
 Natively from Czech Republic & Reunion Island, Jakub and Em took their first steps into the dance world at the age of 16 and 12, both starting with Ballroom Dancing (Latin, Standard & line-dancing). 

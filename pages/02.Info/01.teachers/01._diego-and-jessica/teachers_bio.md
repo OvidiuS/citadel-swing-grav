@@ -6,6 +6,7 @@ leader_country: BR
 follower_name: 'Jessica Pacheco Caetano'
 follower_country: BR
 visible: true
+teachers_video_vimeo_id: '203641708'
 ---
 
 Diego and Jessica live in Fortaleza, Brazil. Diego has a degree in Physical Education and a Graduate Degree in Dance Teaching Methodology. Jessica has a degree in Accounting. Passion for dance has inspired the strong partnership between Diego and Jessica, and has been spreading West Coast Swing in Brazil and around the world since 2009, when they began to put all its charm to its first steps in the WCS.

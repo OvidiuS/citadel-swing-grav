@@ -954,3 +954,7 @@ html .w-mod-js * [data-ix='hide-scroll-nav'] {
 
 .jnjDetails {
   display: none; }
+
+.teachersVideo {
+  clear: both;
+  margin: 30px auto; }

@@ -6,6 +6,7 @@ leader_country: HU
 follower_name: 'Rita Jori'
 follower_country: HU
 visible: true
+teachers_video_vimeo_id: '203641071'
 ---
 
 Adam and Rita first started teaching Boogie-Woogie together in 2002.
