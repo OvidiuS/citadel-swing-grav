@@ -130,6 +130,10 @@ FC.onLoad = function () {
 					if (formCheck) { // the formCheck event gets fired byt the form validation library after validating the form. true if validation succeeded, false otherwise
 						//console.log('proceedingn with sidecart');
 						next();
+					}else{// if cart validation fails
+						$('html, body').animate({ // scroll to first error in form
+						    scrollTop: ($('.has-error:visible:first').offset().top - $('.mobilenav').outerHeight(true) - 25)
+						}, 1000);
 					}
         }else{// if it's someone just looking at the side-cart
 					next();
