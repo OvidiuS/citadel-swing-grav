@@ -60,22 +60,37 @@ $( document ).ready(function() {
 	var partyPassFields = $('div#partyPass').find(':input').not('#fake');
 	var fullPassOwnerField =  $('input#visibleOwnerField');
 	var partyPassOwnerField =  $('input#partyPassOwnerField');
+	var fullPassWSDCField = $('input#visibleWSDCField');
+	var partyPassWSDCField = $('input#partyPassWSDCField');
 
 	// activate form section in accordion
 	$('#fullPassLink').click(function(){
 		partyPassFields.prop( "disabled", true );
 		fullPassFields.prop( "disabled", false );
-		$('#wrkshpFormSubmit').prop( "disabled", false );
+
 		fullPassOwnerField.prop( "disabled", false ).show();
 		partyPassOwnerField.prop( "disabled", true ).hide();
 		fullPassOwnerField.val(partyPassOwnerField.val());
+
+		fullPassWSDCField.prop( "disabled", false ).show();
+		partyPassWSDCField.prop( "disabled", true ).hide();
+		fullPassWSDCField.val(partyPassWSDCField.val());
+
+		$('#wrkshpFormSubmit').prop( "disabled", false );
 	});
+
 	$('#partyPassLink').click(function(){
 		fullPassFields.prop( "disabled", true );
 		partyPassFields.prop( "disabled", false );
+
 		partyPassOwnerField.prop( "disabled", false ).show();
 		fullPassOwnerField.prop( "disabled", true ).hide();
 		partyPassOwnerField.val(fullPassOwnerField.val());
+
+		partyPassWSDCField.prop( "disabled", false ).show();
+		fullPassWSDCField.prop( "disabled", true ).hide();
+		partyPassWSDCField.val(fullPassWSDCField.val());
+
 		$('#wrkshpFormSubmit').prop( "disabled", false );
 	});
 
@@ -83,6 +98,7 @@ $( document ).ready(function() {
 	$("input#visibleOwnerField,input#partyPassOwnerField").blur( function() {
 		$("input.inVisibleOwnerField").val($(this).val());
 	});
+
 
 	$('#visibleRoleSelect').on('change', function() {
 		console.log($('#visibleRoleSelect')[0].selectedIndex);

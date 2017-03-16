@@ -25,7 +25,8 @@
   <div class="col-md-6 inputGroupContainer">
   <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-star-empty"></i></span>
-  <input  name="{{ hmac('WSDC', '--OPEN--', 'CS17FP-ERL') }}" placeholder="if it exists" class="form-control input-lg"  type="number">
+  <input  name="{{ hmac('WSDC', '--OPEN--', 'CS17FP-ERL') }}" placeholder="if it exists" class="form-control input-lg"  type="number" id="visibleWSDCField">
+  <input disabled name="3:{{ hmac('WSDC', '--OPEN--', 'CS17PARTY') }}" placeholder="if it exists" class="form-control input-lg invisibleWSDCField" id="partyPassWSDCField" type="number" style="display:none;">
     </div>
   </div>
 </div>
