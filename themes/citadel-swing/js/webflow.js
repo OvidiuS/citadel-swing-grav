@@ -74,8 +74,11 @@ $( document ).ready(function() {
 
 		fullPassWSDCField.prop( "disabled", false ).show();
 		partyPassWSDCField.prop( "disabled", true ).hide();
-		fullPassWSDCField.val(partyPassWSDCField.val());
 
+		if (partyPassWSDCField.val() != '') {
+		  fullPassWSDCField.val(partyPassWSDCField.val());
+		}
+		
 		$('#wrkshpFormSubmit').prop( "disabled", false );
 	});
 
@@ -89,7 +92,10 @@ $( document ).ready(function() {
 
 		partyPassWSDCField.prop( "disabled", false ).show();
 		fullPassWSDCField.prop( "disabled", true ).hide();
-		partyPassWSDCField.val(fullPassWSDCField.val());
+
+		if (fullPassWSDCField.val() != '') {
+		  partyPassWSDCField.val(fullPassWSDCField.val());
+		}
 
 		$('#wrkshpFormSubmit').prop( "disabled", false );
 	});
@@ -97,6 +103,10 @@ $( document ).ready(function() {
 	// copy the Owner field to the Styling workshop 2:owner field
 	$("input#visibleOwnerField,input#partyPassOwnerField").blur( function() {
 		$("input.inVisibleOwnerField").val($(this).val());
+	});
+
+	$("input#visibleWSDCField,input#partyWSDCField").blur( function() {
+		$("input.inVisibleWSDCField").val($(this).val());
 	});
 
 
