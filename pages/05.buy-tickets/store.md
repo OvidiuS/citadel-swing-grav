@@ -14,3 +14,6 @@ Some tickets ask for a workshop level. Here's what the different levels are:
 **Level 3:** you know basics of West Coast Swing and you feel confident when social dancing. You want to learn more about teamwork to make every dance as pleasant as possible. Your  connection loses its elasticity on very fast or very slow songs.
 
 **Level 4:** you are not afraid of any tempo. You can social dance with partners of different levels (beginner to advanced) without any problem. You want to find your own style and start being more musical not only using the beat of the music but every one of its accents; you want to learn new variations, as well as new moves.
+
+### Group Discounts
+**Warning!** If you are part of a group, please talk to your group leader. Please **do not** register independently, instead, go ahead and read [this useful info](http://citadelswing.ro/info/faqs#group-discounts) about group registrations.
