@@ -105,7 +105,7 @@ $( document ).ready(function() {
 		$("input.inVisibleOwnerField").val($(this).val());
 	});
 
-	$("input#visibleWSDCField,input#partyWSDCField").blur( function() {
+	$("input#visibleWSDCField,input#partyPassWSDCField").blur( function() {
 		$("input.inVisibleWSDCField").val($(this).val());
 	});
 
