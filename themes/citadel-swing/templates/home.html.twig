@@ -1,6 +1,11 @@
 {% extends 'modular.html.twig' %}
 
-{% block herocontent %}
+{% block hero %}
+	<div class="w-section hero">
+		<div id="home" data-ix="scroll-nav" class="big-logo-bg">
+			<div class="w-container">
+				<h1 class="hero-heading{% if header.main_heading_text_size == 'small' %} smallHeroheading{% endif %}">CItadel Swing 2017</h1>
+				
 				<h2 class="hero-subheading">22-24 September 2017 - Timisoara, Romania</h2>
 				<div class="w-row">
 
@@ -18,4 +23,12 @@
 
 				</div>
 				<!-- /.w-row -->
+
+			</div>
+			<!-- /.w-container -->
+		</div>
+		<!-- /.big-logo-bg -->
+	</div>
+	<!-- /.hero -->
 {% endblock %}
+
