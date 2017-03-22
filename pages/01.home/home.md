@@ -1,5 +1,5 @@
 ---
-title: 'Citadel Swing'
+title: Home
 content:
     items: '@self.modular'
     order:
